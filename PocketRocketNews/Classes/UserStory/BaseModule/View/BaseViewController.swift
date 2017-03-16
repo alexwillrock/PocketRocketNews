@@ -7,15 +7,24 @@
 //
 
 import UIKit
+import Reusable
 
 class BaseViewController: UIViewController {
 
-    
+    var emptyView: EmptyView! {
+        
+        let frame = CGRect(x: 0, y: 0, width: 240, height: 240)
+        let _emptyview = EmptyView(frame: frame)
+        _emptyview.center = self.view.center
+        
+        return _emptyview;
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        self.view.addSubview(emptyView)
+        
     }
 }
 
