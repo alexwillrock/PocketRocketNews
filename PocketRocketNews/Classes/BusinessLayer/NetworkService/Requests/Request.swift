@@ -8,18 +8,4 @@
 
 import Foundation
 
-enum URLMethod: String{
-    
-    case POST = "POST"
-    case GET = "GET"
-}
-
-protocol Request {
-    
-    var params: NSDictionary { get }
-    var path: NSString { get }
-    var method: URLMethod { get }
-    
-    init(withParams params: NSDictionary, path: NSString, method: URLMethod)
-    
-}
+protocol Request {  }
