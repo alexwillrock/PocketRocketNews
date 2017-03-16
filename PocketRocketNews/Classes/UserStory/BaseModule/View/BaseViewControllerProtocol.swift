@@ -8,7 +8,9 @@
 
 protocol BaseViewControllerProtocol{
 
-  func didShowEmptyView()
+    func didShowEmptyView()
+    
+    func didDismissEmptyView()
 
-  func didShowError(message: String)
+    func didShowError(message: String)
 }

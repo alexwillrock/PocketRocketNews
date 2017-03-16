@@ -18,8 +18,11 @@ class BaseViewController: UIViewController {
 }
 
 extension BaseViewController: BaseViewControllerProtocol{
-    
-    
+
+    func didDismissEmptyView() {
+        
+    }
+
     func didShowError(message: String){
         
     }
