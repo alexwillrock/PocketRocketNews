@@ -12,7 +12,7 @@ import Reusable
 final class EmptyView: UIView, NibOwnerLoadable {
 
     @IBOutlet weak var title: UILabel!
-    @IBOutlet weak var `repeat`: UIButton!
+    @IBOutlet weak var repeatButton: UIButton!
     
     var delegate: EmptyViewProtocol?
     
