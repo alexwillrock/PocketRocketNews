@@ -24,6 +24,9 @@
 		63F8C04F1E7A5F1F00EFC47C /* FeedListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F8C04E1E7A5F1F00EFC47C /* FeedListViewController.swift */; };
 		63F8C0511E7A5F3100EFC47C /* FeedListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F8C0501E7A5F3100EFC47C /* FeedListController.swift */; };
 		63F8C0531E7A5F5F00EFC47C /* FeedListControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F8C0521E7A5F5F00EFC47C /* FeedListControllerDelegate.swift */; };
+		63F8C0551E7A767D00EFC47C /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F8C0541E7A767D00EFC47C /* FeedItem.swift */; };
+		63F8C0571E7A769000EFC47C /* FeedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F8C0561E7A769000EFC47C /* FeedList.swift */; };
+		63F8C0591E7A769800EFC47C /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F8C0581E7A769800EFC47C /* Source.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,9 @@
 		63F8C04E1E7A5F1F00EFC47C /* FeedListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedListViewController.swift; sourceTree = "<group>"; };
 		63F8C0501E7A5F3100EFC47C /* FeedListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedListController.swift; sourceTree = "<group>"; };
 		63F8C0521E7A5F5F00EFC47C /* FeedListControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedListControllerDelegate.swift; sourceTree = "<group>"; };
+		63F8C0541E7A767D00EFC47C /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
+		63F8C0561E7A769000EFC47C /* FeedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedList.swift; sourceTree = "<group>"; };
+		63F8C0581E7A769800EFC47C /* Source.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
 		71B267ECE8C2F206B19C70CD /* Pods_PocketRocketNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PocketRocketNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD1AC620980FF25CF61884CF /* Pods-PocketRocketNewsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketRocketNewsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PocketRocketNewsTests/Pods-PocketRocketNewsTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -167,6 +173,9 @@
 		63CBDD311E7A47D200D5A448 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				63F8C0541E7A767D00EFC47C /* FeedItem.swift */,
+				63F8C0561E7A769000EFC47C /* FeedList.swift */,
+				63F8C0581E7A769800EFC47C /* Source.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -513,6 +522,9 @@
 				63CBDD0F1E7A464D00D5A448 /* AppDelegate.swift in Sources */,
 				63CBDD401E7A49A100D5A448 /* BaseViewControllerProtocol.swift in Sources */,
 				63F8C04F1E7A5F1F00EFC47C /* FeedListViewController.swift in Sources */,
+				63F8C0591E7A769800EFC47C /* Source.swift in Sources */,
+				63F8C0551E7A767D00EFC47C /* FeedItem.swift in Sources */,
+				63F8C0571E7A769000EFC47C /* FeedList.swift in Sources */,
 				63CBDD3E1E7A484200D5A448 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

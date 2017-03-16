@@ -12,18 +12,17 @@ import Reusable
 class BaseViewController: UIViewController {
 
     var emptyView: EmptyView{
-        
         let frame = CGRect(x: 0, y: 0, width: 240, height: 240)
         let _emptyview = EmptyView(frame: frame)
         _emptyview.center = self.view.center
-        
+        _emptyview.isHidden = true
         return _emptyview;
     }
     
     var activityView: UIActivityIndicatorView {
-        
         let _activityView = UIActivityIndicatorView(activityIndicatorStyle: .gray)
         _activityView.center = self.view.center
+        _activityView.isHidden = true
         return _activityView
     }
     
@@ -43,7 +42,6 @@ extension BaseViewController: BaseViewControllerProtocol{
     }
 
     func didShowError(message: String){
-        
         let alert = UIAlertController(title: "Ошибка", message: message, preferredStyle: .alert)
         let cancell = UIAlertAction(title: "OK", style: .default) { (action) in
             alert.dismiss(animated: true, completion: nil)
