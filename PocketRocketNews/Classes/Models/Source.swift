@@ -10,4 +10,12 @@ import Foundation
 
 struct Source {
     
+    let name: String
+    let link: URL
+    
+    init(name: String, link: URL) {
+        self.name = name
+        self.link = link
+    }
+    
 }

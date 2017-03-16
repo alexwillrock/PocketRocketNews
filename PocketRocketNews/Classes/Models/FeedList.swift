@@ -10,5 +10,11 @@ import Foundation
 
 struct FeedList {
     
+    let items: [FeedItem]
+    let source: Source
     
+    init(items: [FeedItem], source: Source) {
+        self.items = items
+        self.source = source
+    }
 }
