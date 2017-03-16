@@ -13,4 +13,8 @@ protocol BaseViewControllerProtocol{
     func didDismissEmptyView()
 
     func didShowError(message: String)
+    
+    func didShowActivityView()
+    
+    func didDismissActivityView()
 }

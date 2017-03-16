@@ -10,6 +10,13 @@ import UIKit
 
 final class FeedListViewController: BaseViewController {
 
+    //MARK: public
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    
+    //MARK: private
+    
     fileprivate var controller: FeedListController {
         var _controller = FeedListController()
         _controller.delegate = self;

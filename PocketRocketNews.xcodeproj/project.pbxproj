@@ -20,7 +20,6 @@
 		63F8C0451E7A4CD800EFC47C /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F8C0441E7A4CD800EFC47C /* EmptyView.swift */; };
 		63F8C0471E7A4E4700EFC47C /* EmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63F8C0461E7A4E4700EFC47C /* EmptyView.xib */; };
 		63F8C0491E7A597B00EFC47C /* EmptyViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F8C0481E7A597B00EFC47C /* EmptyViewDelegate.swift */; };
-		63F8C04B1E7A5B9B00EFC47C /* BaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63F8C04A1E7A5B9B00EFC47C /* BaseViewController.xib */; };
 		63F8C04D1E7A5F0400EFC47C /* FeedStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63F8C04C1E7A5F0400EFC47C /* FeedStoryboard.storyboard */; };
 		63F8C04F1E7A5F1F00EFC47C /* FeedListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F8C04E1E7A5F1F00EFC47C /* FeedListViewController.swift */; };
 		63F8C0511E7A5F3100EFC47C /* FeedListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F8C0501E7A5F3100EFC47C /* FeedListController.swift */; };
@@ -57,7 +56,6 @@
 		63F8C0441E7A4CD800EFC47C /* EmptyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 		63F8C0461E7A4E4700EFC47C /* EmptyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyView.xib; sourceTree = "<group>"; };
 		63F8C0481E7A597B00EFC47C /* EmptyViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyViewDelegate.swift; sourceTree = "<group>"; };
-		63F8C04A1E7A5B9B00EFC47C /* BaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseViewController.xib; sourceTree = "<group>"; };
 		63F8C04C1E7A5F0400EFC47C /* FeedStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FeedStoryboard.storyboard; sourceTree = "<group>"; };
 		63F8C04E1E7A5F1F00EFC47C /* FeedListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedListViewController.swift; sourceTree = "<group>"; };
 		63F8C0501E7A5F3100EFC47C /* FeedListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedListController.swift; sourceTree = "<group>"; };
@@ -248,7 +246,6 @@
 			children = (
 				63CBDD3F1E7A49A100D5A448 /* BaseViewControllerProtocol.swift */,
 				63CBDD3D1E7A484200D5A448 /* BaseViewController.swift */,
-				63F8C04A1E7A5B9B00EFC47C /* BaseViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -394,7 +391,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				63F8C0471E7A4E4700EFC47C /* EmptyView.xib in Resources */,
-				63F8C04B1E7A5B9B00EFC47C /* BaseViewController.xib in Resources */,
 				63CBDD191E7A464D00D5A448 /* LaunchScreen.storyboard in Resources */,
 				63F8C04D1E7A5F0400EFC47C /* FeedStoryboard.storyboard in Resources */,
 				63CBDD161E7A464D00D5A448 /* Assets.xcassets in Resources */,
