@@ -7,7 +7,8 @@ target 'PocketRocketNews' do
 
   # Pods for PocketRocketNews
 
- pod 'Reusable'
+ 	pod 'Reusable'
+ 	pod 'Alamofire', '~> 4.4'
 
   target 'PocketRocketNewsTests' do
     inherit! :search_paths

@@ -1,5 +1,5 @@
 //
-//  FeedItem.swift
+//  SourceList.swift
 //  PocketRocketNews
 //
 //  Created by Алексей on 16.03.17.
@@ -8,11 +8,7 @@
 
 import Foundation
 
-struct FeedItem {
+struct SourceList {
     
-    let link: URL
-    let title: String
-    let text: String
-    let pubDate: Date
-    let image: URL
+    let sources: [Source]
 }

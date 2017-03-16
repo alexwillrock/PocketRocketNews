@@ -7,31 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3E75639ED1AC6B5E19E3128CE168A76D /* Pods-PocketRocketNews-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE58AB5D72856C748DF07FF32A1D672 /* Pods-PocketRocketNews-dummy.m */; };
-		649E10EF53F6062D6C1A2BB1C751CC92 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BACBA37F042ED369141D30633EDEECB /* UITableView+Reusable.swift */; };
+		06DE3701A741323044607BDE0B6B6009 /* StoryboardSceneBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AD0B7FBBCE514562EC56F38355748C /* StoryboardSceneBased.swift */; };
+		10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFB0DFB110777D7CE952F45108A9FEC /* Timeline.swift */; };
+		14C38B122C0D3BBF8B65AA864156DCB7 /* Reusable-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DBC391A3EB9A4DE3FD51E940220D4DE5 /* Reusable-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A0109945CD7EA309FEBC747465DD783 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D759C3A3F13999A42501475BFF7E56F /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE9FBECF375ECD32939D00FCAA6B7FA /* UITableView+Reusable.swift */; };
+		2BF13D738489428E1049D5F154EFE6C4 /* Pods-PocketRocketNews-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9405FAAB709034281033252A67CFC841 /* Pods-PocketRocketNews-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		361FB96E8CCDD78464866E8054992A65 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFB246AAFFE50AF7D208119A8F82F07 /* NibLoadable.swift */; };
+		3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41C7C191EBE9386D38FDB55A623FF69 /* TaskDelegate.swift */; };
+		5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F7EC69CC9A6E9D14D4E55BF0A1958E /* Request.swift */; };
+		5B5661D57938222CFC1B100803465DFB /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05ABA80052419EBF2B2D8A8B0CD5889 /* Reusable.swift */; };
+		5D614B831779FDCFE262AA836AA0C460 /* StoryboardBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C15B271136132AA9CB89C223309B660 /* StoryboardBased.swift */; };
+		61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C64A01EE33833FAA080007F88BB9AE /* DispatchQueue+Alamofire.swift */; };
+		62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F2A9CF71CF9BEA0C4E8636B11FAA5C /* ServerTrustPolicy.swift */; };
+		687A51F7687FFA26FF180B6D23CD7860 /* NibOwnerLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3A3BAEAC161100838339BBCAD561E2 /* NibOwnerLoadable.swift */; };
 		6BBDFC2ACA8F666EE064DB0BBC753AE0 /* Pods-PocketRocketNewsTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DE3990F7AE2DD540C93C9ED197A7BC7B /* Pods-PocketRocketNewsTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		72F108F4163EA43559806ECBBF239F80 /* StoryboardSceneBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15050EA9A4BA48E6F87C096051ADE64 /* StoryboardSceneBased.swift */; };
-		8FEE90720341678DA39BA9A891E692D9 /* NibOwnerLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F8C6F7A9437384BE60AA9175E12F28 /* NibOwnerLoadable.swift */; };
-		A46E5928AC08E8DD49E1C44A5586F84D /* UICollectionView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84B830FA04E7A4024BD28BDF9739F05 /* UICollectionView+Reusable.swift */; };
-		AA28ABA6AEFC413D703903DE7B027869 /* StoryboardBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A63237669529A5A74EE1981C202E4A /* StoryboardBased.swift */; };
-		ACEF332598C2F872C109ECB394A3546F /* Pods-PocketRocketNews-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9405FAAB709034281033252A67CFC841 /* Pods-PocketRocketNews-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6D8E6C26B2F794DBEBAD60A5B3CC9C /* SessionDelegate.swift */; };
+		7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29182C6D66386C507504C70440422A59 /* Result.swift */; };
+		8C39D1D30685A879149238911B4F7A12 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
+		8ECFE1C90CC1A64A491668AA7A9CCB29 /* Reusable-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 314096AFA8E4982EE6CA7AD26E15054A /* Reusable-dummy.m */; };
+		9E2588017F3A9842B9C43E292AA4E859 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D86784EF8B0AE51A3CF9FFC95178CD7 /* AFError.swift */; };
+		A01D52124772C956AEFE9515ADD1B510 /* Pods-PocketRocketNews-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE58AB5D72856C748DF07FF32A1D672 /* Pods-PocketRocketNews-dummy.m */; };
+		A04BFC558D69E7DBB68023C80A9CFE4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD63A07F77FCF2BBB473AC4B91515A8 /* NetworkReachabilityManager.swift */; };
+		A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FBC0BB2BBCB7CF79614F57F6F9513D3 /* Alamofire-dummy.m */; };
+		AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3D8BE4D5689ECA1F0A0FCCBB0277B6 /* SessionManager.swift */; };
 		AEA60253C14871F5C009A796A89F5359 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
-		B0529B06A2B05E25FE3C66CC4326C16D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
-		BC10F7B68131F0CC3FFF94704ADF9841 /* Reusable-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F83B922AE9671354F2ADAC14E5A94E48 /* Reusable-dummy.m */; };
-		CDF4736ECF2AEF356D4B08ACAB8A6ED6 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B34222796F83EBFE7C0541334BB21 /* Reusable.swift */; };
-		ECD0F1E084A78030EC4E9F8024D1BB57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
-		F01A5CEA52EBCFC41BF7EB29418B52AC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
-		F034654FE639EB3F276CB0119990D9C9 /* Reusable-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AC9B30461E5D8399206EF022F5548BDB /* Reusable-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74CBCFA96C851383CF07C8B9DF694FE /* MultipartFormData.swift */; };
+		BB5EBBC4D6C93EBA93BA81D5DD94BE35 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B81BF44FBD65AB3D7B607F1F364DED /* Validation.swift */; };
+		BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B261C46D8C92B3CB5D343A5868167210 /* ParameterEncoding.swift */; };
+		CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32814B7510B2544F3DAA3EF78CB85F58 /* Response.swift */; };
+		CDCE4C01423C77F118EAD51F09377689 /* UICollectionView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB172F222B0DCFFDE38614C2F0C2E2 /* UICollectionView+Reusable.swift */; };
+		EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB076C5300B89097CB9A43E009FFE9CA /* Notifications.swift */; };
 		F1C71484256ECBCDB6C64C8C30F55558 /* Pods-PocketRocketNewsTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA61DCC75BD07E18A430C87BCB8AF0 /* Pods-PocketRocketNewsTests-dummy.m */; };
-		F3F5BFBEEB1A8E3B36C62DC4D7D38E6C /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A05C6A72E02D2F81F88C9C4399CDCB /* NibLoadable.swift */; };
+		F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAACD6B3A6C1F3A4353CA11BB9E154E0 /* ResponseSerialization.swift */; };
+		F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794DCD85AAA204ED9D1A341EC0DC098 /* Alamofire.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		216201BC5006D36F46BDA019259EA7CD /* PBXContainerItemProxy */ = {
+		56709C161FE66D835021584323E038AD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 93D01D4BCD0327DDA96873BB56111DCE;
+			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
+			remoteInfo = Alamofire;
+		};
+		5D553B9D7B359AB3F4E15A7B14D40691 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C18DACBA59D29BF1D8D1CF18A5D0AB1;
 			remoteInfo = Reusable;
 		};
 /* End PBXContainerItemProxy section */
@@ -39,60 +66,92 @@
 /* Begin PBXFileReference section */
 		00D2A9D96657127A61FB4B1E77C2D9FD /* Pods-PocketRocketNewsTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PocketRocketNewsTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		05D33258D2CEEAC11AF18F9BEEB18536 /* Pods-PocketRocketNewsTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PocketRocketNewsTests-frameworks.sh"; sourceTree = "<group>"; };
-		092BE3E3C20EBDA99B010CFE80E8F2E1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A571F8AFB4471E37038A71134263CFB /* Pods-PocketRocketNewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PocketRocketNewsTests.debug.xcconfig"; sourceTree = "<group>"; };
-		1FA014BEB29FBE99FF7B5331802D5F4A /* Reusable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Reusable.framework; path = Reusable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		25C6C3B7588B028C6C726000189D99FB /* Reusable.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Reusable.xcconfig; sourceTree = "<group>"; };
+		158D986CD4C2A7553D76CF38820D4606 /* Reusable.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Reusable.modulemap; sourceTree = "<group>"; };
+		1AA46167DB3956602BDFC02BB3C96D63 /* Pods_PocketRocketNewsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PocketRocketNewsTests.framework; path = "Pods-PocketRocketNewsTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ABE1436D35F63AC579E9D38E8294BD1 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		1AD63A07F77FCF2BBB473AC4B91515A8 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		24CA02D10F42EFCB71C02858B9045B03 /* Pods_PocketRocketNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PocketRocketNews.framework; path = "Pods-PocketRocketNews.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		273F79261AA6E21E93E939F20B605CD1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29182C6D66386C507504C70440422A59 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
 		2AE58AB5D72856C748DF07FF32A1D672 /* Pods-PocketRocketNews-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PocketRocketNews-dummy.m"; sourceTree = "<group>"; };
+		2C15B271136132AA9CB89C223309B660 /* StoryboardBased.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardBased.swift; path = Sources/Storyboard/StoryboardBased.swift; sourceTree = "<group>"; };
 		2CF17C97E518192E7CF2CA7656045965 /* Pods-PocketRocketNewsTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PocketRocketNewsTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2CFA61DCC75BD07E18A430C87BCB8AF0 /* Pods-PocketRocketNewsTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PocketRocketNewsTests-dummy.m"; sourceTree = "<group>"; };
-		37A05C6A72E02D2F81F88C9C4399CDCB /* NibLoadable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NibLoadable.swift; path = Sources/View/NibLoadable.swift; sourceTree = "<group>"; };
+		2FBC0BB2BBCB7CF79614F57F6F9513D3 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		314096AFA8E4982EE6CA7AD26E15054A /* Reusable-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Reusable-dummy.m"; sourceTree = "<group>"; };
+		32814B7510B2544F3DAA3EF78CB85F58 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		38AD0B7FBBCE514562EC56F38355748C /* StoryboardSceneBased.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardSceneBased.swift; path = Sources/Storyboard/StoryboardSceneBased.swift; sourceTree = "<group>"; };
+		3B3A3BAEAC161100838339BBCAD561E2 /* NibOwnerLoadable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NibOwnerLoadable.swift; path = Sources/View/NibOwnerLoadable.swift; sourceTree = "<group>"; };
+		3D86784EF8B0AE51A3CF9FFC95178CD7 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		3DFB172F222B0DCFFDE38614C2F0C2E2 /* UICollectionView+Reusable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UICollectionView+Reusable.swift"; path = "Sources/View/UICollectionView+Reusable.swift"; sourceTree = "<group>"; };
 		3F400DD40B7CAF18600E404E88909E02 /* Pods-PocketRocketNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PocketRocketNews.release.xcconfig"; sourceTree = "<group>"; };
+		42B81BF44FBD65AB3D7B607F1F364DED /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
 		4ECF8B84CDDF11040CFDCA0F0D7412F9 /* Pods-PocketRocketNewsTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PocketRocketNewsTests-resources.sh"; sourceTree = "<group>"; };
+		59ACC40CD2BB20DBECC35E3D62A91A93 /* Reusable.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Reusable.xcconfig; sourceTree = "<group>"; };
+		5D113055CB5E660C879A9CCA0BDCEDF2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6BE9FBECF375ECD32939D00FCAA6B7FA /* UITableView+Reusable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+Reusable.swift"; path = "Sources/View/UITableView+Reusable.swift"; sourceTree = "<group>"; };
 		6D8CEA8B71883E7AC24E14BA66DE9303 /* Pods-PocketRocketNews-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PocketRocketNews-acknowledgements.plist"; sourceTree = "<group>"; };
-		6DCD75DF801EB306FE681E750566CFF6 /* Reusable-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Reusable-prefix.pch"; sourceTree = "<group>"; };
 		70AC741CA16BE0C2F8B00FD7C21B986A /* Pods-PocketRocketNews-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PocketRocketNews-resources.sh"; sourceTree = "<group>"; };
 		75EABEE891A0A9F8BAD3E04F6BCEC53D /* Pods-PocketRocketNewsTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PocketRocketNewsTests.modulemap"; sourceTree = "<group>"; };
+		7A0109945CD7EA309FEBC747465DD783 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
 		7A77B69B3B9C1E0972A1C50FC863B950 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7BACBA37F042ED369141D30633EDEECB /* UITableView+Reusable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+Reusable.swift"; path = "Sources/View/UITableView+Reusable.swift"; sourceTree = "<group>"; };
 		7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		81F2A9CF71CF9BEA0C4E8636B11FAA5C /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		8FFB246AAFFE50AF7D208119A8F82F07 /* NibLoadable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NibLoadable.swift; path = Sources/View/NibLoadable.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9405FAAB709034281033252A67CFC841 /* Pods-PocketRocketNews-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PocketRocketNews-umbrella.h"; sourceTree = "<group>"; };
-		95F8C6F7A9437384BE60AA9175E12F28 /* NibOwnerLoadable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NibOwnerLoadable.swift; path = Sources/View/NibOwnerLoadable.swift; sourceTree = "<group>"; };
-		9E4B34222796F83EBFE7C0541334BB21 /* Reusable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reusable.swift; path = Sources/View/Reusable.swift; sourceTree = "<group>"; };
-		A15050EA9A4BA48E6F87C096051ADE64 /* StoryboardSceneBased.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardSceneBased.swift; path = Sources/Storyboard/StoryboardSceneBased.swift; sourceTree = "<group>"; };
-		A604A1AB0A2F77D83BFA92D241962AAF /* Pods_PocketRocketNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PocketRocketNews.framework; path = "Pods-PocketRocketNews.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC9B30461E5D8399206EF022F5548BDB /* Reusable-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Reusable-umbrella.h"; sourceTree = "<group>"; };
+		96F7EC69CC9A6E9D14D4E55BF0A1958E /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		9EADA3D4FE4CAC6352E78059CEB1E9C8 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		9F3D8BE4D5689ECA1F0A0FCCBB0277B6 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		AAACD6B3A6C1F3A4353CA11BB9E154E0 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		AB076C5300B89097CB9A43E009FFE9CA /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		B261C46D8C92B3CB5D343A5868167210 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		B49CEF77F2F10B52C29B744A6311D222 /* Reusable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Reusable.framework; path = Reusable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4EDFC2850AE719ECD9308B1D2D95292 /* Pods-PocketRocketNews-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PocketRocketNews-frameworks.sh"; sourceTree = "<group>"; };
-		B84B830FA04E7A4024BD28BDF9739F05 /* UICollectionView+Reusable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UICollectionView+Reusable.swift"; path = "Sources/View/UICollectionView+Reusable.swift"; sourceTree = "<group>"; };
-		B8B1AD67D11720E572CF22F7D17FE1C8 /* Reusable.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Reusable.modulemap; sourceTree = "<group>"; };
-		C5A63237669529A5A74EE1981C202E4A /* StoryboardBased.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardBased.swift; path = Sources/Storyboard/StoryboardBased.swift; sourceTree = "<group>"; };
+		B74CBCFA96C851383CF07C8B9DF694FE /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		BA6D8E6C26B2F794DBEBAD60A5B3CC9C /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		C5AF37F91127C88231DC93CCD410EDC3 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8F17D6FBBBD6D90F446B4A74C571BBD /* Pods-PocketRocketNewsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PocketRocketNewsTests.release.xcconfig"; sourceTree = "<group>"; };
+		D05ABA80052419EBF2B2D8A8B0CD5889 /* Reusable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reusable.swift; path = Sources/View/Reusable.swift; sourceTree = "<group>"; };
 		D4AC52D094CAE1BDA880B7F89743B24E /* Pods-PocketRocketNews-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PocketRocketNews-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D5DDC5F9484C198ED727CBFFA225F9F7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D6C1B0F56860C147D5F59F3F792F732F /* Pods_PocketRocketNewsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PocketRocketNewsTests.framework; path = "Pods-PocketRocketNewsTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D794DCD85AAA204ED9D1A341EC0DC098 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		DBC391A3EB9A4DE3FD51E940220D4DE5 /* Reusable-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Reusable-umbrella.h"; sourceTree = "<group>"; };
 		DE3990F7AE2DD540C93C9ED197A7BC7B /* Pods-PocketRocketNewsTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PocketRocketNewsTests-umbrella.h"; sourceTree = "<group>"; };
 		E20AB6D219B8B8A928D04E62B4041248 /* Pods-PocketRocketNews.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PocketRocketNews.modulemap"; sourceTree = "<group>"; };
+		E3C64A01EE33833FAA080007F88BB9AE /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		EBFB0DFB110777D7CE952F45108A9FEC /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		F27E53709C6668ACF7F3560E0591B562 /* Reusable-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Reusable-prefix.pch"; sourceTree = "<group>"; };
+		F41C7C191EBE9386D38FDB55A623FF69 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		F7C5030BB791EC2A4EA81645EEA14153 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		F7D892905C658473A2AE366BE3C26B52 /* Pods-PocketRocketNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PocketRocketNews.debug.xcconfig"; sourceTree = "<group>"; };
-		F83B922AE9671354F2ADAC14E5A94E48 /* Reusable-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Reusable-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1881C4B04C7F2FAE69753AC0AD5DBAE0 /* Frameworks */ = {
+		2C7A9CD1DD128270991103EEBA1FEA46 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0529B06A2B05E25FE3C66CC4326C16D /* Foundation.framework in Frameworks */,
+				9E2588017F3A9842B9C43E292AA4E859 /* Foundation.framework in Frameworks */,
+				8C39D1D30685A879149238911B4F7A12 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CB2303FD21F271D96A4C6ABBF0EFFC75 /* Frameworks */ = {
+		7E8A584CB0CAC2473B6FE099481078B6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECD0F1E084A78030EC4E9F8024D1BB57 /* Foundation.framework in Frameworks */,
-				F01A5CEA52EBCFC41BF7EB29418B52AC /* UIKit.framework in Frameworks */,
+				BB5EBBC4D6C93EBA93BA81D5DD94BE35 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99195E4207764744AEC07ECCBCD550EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A04BFC558D69E7DBB68023C80A9CFE4E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,43 +166,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		125E20B45349B1D7F0CA92BDED0E6D5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C5AF37F91127C88231DC93CCD410EDC3 /* Alamofire.framework */,
+				24CA02D10F42EFCB71C02858B9045B03 /* Pods_PocketRocketNews.framework */,
+				1AA46167DB3956602BDFC02BB3C96D63 /* Pods_PocketRocketNewsTests.framework */,
+				B49CEF77F2F10B52C29B744A6311D222 /* Reusable.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40A5BB2CED614566BB5DBADE07DD7686 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FFD11ED9958A9350F2490551E0A5C411 /* Alamofire */,
+				BED106827A38FDB7E1CF492934606E9E /* Reusable */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				E6EE98446B568159EE277B68FD442AF0 /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		43B329E6A41960B4D03155AA3CEA26B1 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				37A05C6A72E02D2F81F88C9C4399CDCB /* NibLoadable.swift */,
-				95F8C6F7A9437384BE60AA9175E12F28 /* NibOwnerLoadable.swift */,
-				9E4B34222796F83EBFE7C0541334BB21 /* Reusable.swift */,
-				B84B830FA04E7A4024BD28BDF9739F05 /* UICollectionView+Reusable.swift */,
-				7BACBA37F042ED369141D30633EDEECB /* UITableView+Reusable.swift */,
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
-		525AD1F5E652AA19B470ED8E7D1DB613 /* Storyboard */ = {
-			isa = PBXGroup;
-			children = (
-				C5A63237669529A5A74EE1981C202E4A /* StoryboardBased.swift */,
-				A15050EA9A4BA48E6F87C096051ADE64 /* StoryboardSceneBased.swift */,
-			);
-			name = Storyboard;
-			sourceTree = "<group>";
-		};
-		62F09BA5E581371EC1722258E05062BB /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A604A1AB0A2F77D83BFA92D241962AAF /* Pods_PocketRocketNews.framework */,
-				D6C1B0F56860C147D5F59F3F792F732F /* Pods_PocketRocketNewsTests.framework */,
-				1FA014BEB29FBE99FF7B5331802D5F4A /* Reusable.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		75ACE4D26E8A501AF4A521774D020B62 /* Pods-PocketRocketNewsTests */ = {
@@ -169,8 +217,8 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				917F2944D2FAC499E12EBF9E985C9850 /* Pods */,
-				62F09BA5E581371EC1722258E05062BB /* Products */,
+				40A5BB2CED614566BB5DBADE07DD7686 /* Pods */,
+				125E20B45349B1D7F0CA92BDED0E6D5C /* Products */,
 				84019EE15C6E295D4DC4481C6751E641 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -184,12 +232,16 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		917F2944D2FAC499E12EBF9E985C9850 /* Pods */ = {
+		AB5571D84F035539B1961511F6549F69 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E20134866B8FDEB743E09758EAE038DA /* Reusable */,
+				8FFB246AAFFE50AF7D208119A8F82F07 /* NibLoadable.swift */,
+				3B3A3BAEAC161100838339BBCAD561E2 /* NibOwnerLoadable.swift */,
+				D05ABA80052419EBF2B2D8A8B0CD5889 /* Reusable.swift */,
+				3DFB172F222B0DCFFDE38614C2F0C2E2 /* UICollectionView+Reusable.swift */,
+				6BE9FBECF375ECD32939D00FCAA6B7FA /* UITableView+Reusable.swift */,
 			);
-			name = Pods;
+			name = View;
 			sourceTree = "<group>";
 		};
 		ABAFF63694609451B3683CB019E266AA /* Pods-PocketRocketNews */ = {
@@ -210,15 +262,29 @@
 			path = "Target Support Files/Pods-PocketRocketNews";
 			sourceTree = "<group>";
 		};
-		E20134866B8FDEB743E09758EAE038DA /* Reusable */ = {
+		BED106827A38FDB7E1CF492934606E9E /* Reusable */ = {
 			isa = PBXGroup;
 			children = (
-				525AD1F5E652AA19B470ED8E7D1DB613 /* Storyboard */,
-				F223A6D43FCA654B26ECA6A359C7E848 /* Support Files */,
-				43B329E6A41960B4D03155AA3CEA26B1 /* View */,
+				F45AF572AC4149F5943BADFD590F9049 /* Storyboard */,
+				C6DBDC8565F9DB167005D406683A0910 /* Support Files */,
+				AB5571D84F035539B1961511F6549F69 /* View */,
 			);
 			name = Reusable;
 			path = Reusable;
+			sourceTree = "<group>";
+		};
+		C6DBDC8565F9DB167005D406683A0910 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D113055CB5E660C879A9CCA0BDCEDF2 /* Info.plist */,
+				158D986CD4C2A7553D76CF38820D4606 /* Reusable.modulemap */,
+				59ACC40CD2BB20DBECC35E3D62A91A93 /* Reusable.xcconfig */,
+				314096AFA8E4982EE6CA7AD26E15054A /* Reusable-dummy.m */,
+				F27E53709C6668ACF7F3560E0591B562 /* Reusable-prefix.pch */,
+				DBC391A3EB9A4DE3FD51E940220D4DE5 /* Reusable-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Reusable";
 			sourceTree = "<group>";
 		};
 		E6EE98446B568159EE277B68FD442AF0 /* iOS */ = {
@@ -230,28 +296,63 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		F223A6D43FCA654B26ECA6A359C7E848 /* Support Files */ = {
+		F45AF572AC4149F5943BADFD590F9049 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				092BE3E3C20EBDA99B010CFE80E8F2E1 /* Info.plist */,
-				B8B1AD67D11720E572CF22F7D17FE1C8 /* Reusable.modulemap */,
-				25C6C3B7588B028C6C726000189D99FB /* Reusable.xcconfig */,
-				F83B922AE9671354F2ADAC14E5A94E48 /* Reusable-dummy.m */,
-				6DCD75DF801EB306FE681E750566CFF6 /* Reusable-prefix.pch */,
-				AC9B30461E5D8399206EF022F5548BDB /* Reusable-umbrella.h */,
+				2C15B271136132AA9CB89C223309B660 /* StoryboardBased.swift */,
+				38AD0B7FBBCE514562EC56F38355748C /* StoryboardSceneBased.swift */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		F5C12E115C557FFDEE69414A6E6B8E93 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F7C5030BB791EC2A4EA81645EEA14153 /* Alamofire.modulemap */,
+				1ABE1436D35F63AC579E9D38E8294BD1 /* Alamofire.xcconfig */,
+				2FBC0BB2BBCB7CF79614F57F6F9513D3 /* Alamofire-dummy.m */,
+				9EADA3D4FE4CAC6352E78059CEB1E9C8 /* Alamofire-prefix.pch */,
+				7A0109945CD7EA309FEBC747465DD783 /* Alamofire-umbrella.h */,
+				273F79261AA6E21E93E939F20B605CD1 /* Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Reusable";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		FFD11ED9958A9350F2490551E0A5C411 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				3D86784EF8B0AE51A3CF9FFC95178CD7 /* AFError.swift */,
+				D794DCD85AAA204ED9D1A341EC0DC098 /* Alamofire.swift */,
+				E3C64A01EE33833FAA080007F88BB9AE /* DispatchQueue+Alamofire.swift */,
+				B74CBCFA96C851383CF07C8B9DF694FE /* MultipartFormData.swift */,
+				1AD63A07F77FCF2BBB473AC4B91515A8 /* NetworkReachabilityManager.swift */,
+				AB076C5300B89097CB9A43E009FFE9CA /* Notifications.swift */,
+				B261C46D8C92B3CB5D343A5868167210 /* ParameterEncoding.swift */,
+				96F7EC69CC9A6E9D14D4E55BF0A1958E /* Request.swift */,
+				32814B7510B2544F3DAA3EF78CB85F58 /* Response.swift */,
+				AAACD6B3A6C1F3A4353CA11BB9E154E0 /* ResponseSerialization.swift */,
+				29182C6D66386C507504C70440422A59 /* Result.swift */,
+				81F2A9CF71CF9BEA0C4E8636B11FAA5C /* ServerTrustPolicy.swift */,
+				BA6D8E6C26B2F794DBEBAD60A5B3CC9C /* SessionDelegate.swift */,
+				9F3D8BE4D5689ECA1F0A0FCCBB0277B6 /* SessionManager.swift */,
+				F41C7C191EBE9386D38FDB55A623FF69 /* TaskDelegate.swift */,
+				EBFB0DFB110777D7CE952F45108A9FEC /* Timeline.swift */,
+				42B81BF44FBD65AB3D7B607F1F364DED /* Validation.swift */,
+				F5C12E115C557FFDEE69414A6E6B8E93 /* Support Files */,
+			);
+			name = Alamofire;
+			path = Alamofire;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		377751FE056D51BAF945358B348B7B38 /* Headers */ = {
+		39FC6D508609C8DF69D974296DFE079F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACEF332598C2F872C109ECB394A3546F /* Pods-PocketRocketNews-umbrella.h in Headers */,
+				14C38B122C0D3BBF8B65AA864156DCB7 /* Reusable-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,24 +364,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4DBEC55D50BBF2447E5804E3BB8E44E3 /* Headers */ = {
+		B4002B6E97835FDCCAA5963EFE09A3E0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F034654FE639EB3F276CB0119990D9C9 /* Reusable-umbrella.h in Headers */,
+				1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B400F3486DE23D5963213054EC6223A5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BF13D738489428E1049D5F154EFE6C4 /* Pods-PocketRocketNews-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		93D01D4BCD0327DDA96873BB56111DCE /* Reusable */ = {
+		0C18DACBA59D29BF1D8D1CF18A5D0AB1 /* Reusable */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C54B13B0EAE6345387423DD138882CCF /* Build configuration list for PBXNativeTarget "Reusable" */;
+			buildConfigurationList = 5366122C8CB50547668F8E47A2BB060E /* Build configuration list for PBXNativeTarget "Reusable" */;
 			buildPhases = (
-				F56D6E5ECE9CA97AFC82B69221B2A4C4 /* Sources */,
-				CB2303FD21F271D96A4C6ABBF0EFFC75 /* Frameworks */,
-				4DBEC55D50BBF2447E5804E3BB8E44E3 /* Headers */,
+				9E0DDC4414237A5F9B18F1C4A1E9AE1D /* Sources */,
+				2C7A9CD1DD128270991103EEBA1FEA46 /* Frameworks */,
+				39FC6D508609C8DF69D974296DFE079F /* Headers */,
 			);
 			buildRules = (
 			);
@@ -288,25 +397,24 @@
 			);
 			name = Reusable;
 			productName = Reusable;
-			productReference = 1FA014BEB29FBE99FF7B5331802D5F4A /* Reusable.framework */;
+			productReference = B49CEF77F2F10B52C29B744A6311D222 /* Reusable.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D35BADDA5839E297E691E7F01CDAC3E3 /* Pods-PocketRocketNews */ = {
+		88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4924DA220E41EFC0537BDD07020DD48F /* Build configuration list for PBXNativeTarget "Pods-PocketRocketNews" */;
+			buildConfigurationList = 419E5D95491847CD79841B971A8A3277 /* Build configuration list for PBXNativeTarget "Alamofire" */;
 			buildPhases = (
-				5AFFAC6EFD753BD9F657394B77864E4F /* Sources */,
-				1881C4B04C7F2FAE69753AC0AD5DBAE0 /* Frameworks */,
-				377751FE056D51BAF945358B348B7B38 /* Headers */,
+				32B9974868188C4803318E36329C87FE /* Sources */,
+				99195E4207764744AEC07ECCBCD550EB /* Frameworks */,
+				B4002B6E97835FDCCAA5963EFE09A3E0 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5FB8EB6FE4E70A3D3FA26E5494CD6B4B /* PBXTargetDependency */,
 			);
-			name = "Pods-PocketRocketNews";
-			productName = "Pods-PocketRocketNews";
-			productReference = A604A1AB0A2F77D83BFA92D241962AAF /* Pods_PocketRocketNews.framework */;
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = C5AF37F91127C88231DC93CCD410EDC3 /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		E21960FA6C39B3EA012D2266027D08A4 /* Pods-PocketRocketNewsTests */ = {
@@ -323,7 +431,26 @@
 			);
 			name = "Pods-PocketRocketNewsTests";
 			productName = "Pods-PocketRocketNewsTests";
-			productReference = D6C1B0F56860C147D5F59F3F792F732F /* Pods_PocketRocketNewsTests.framework */;
+			productReference = 1AA46167DB3956602BDFC02BB3C96D63 /* Pods_PocketRocketNewsTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F19FCBA062D599B32AB520C4025E2CBE /* Pods-PocketRocketNews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 406EA2F655C7AD3FD10972F0718CAEB8 /* Build configuration list for PBXNativeTarget "Pods-PocketRocketNews" */;
+			buildPhases = (
+				D712530694ED4FF04AE3176EA359E66F /* Sources */,
+				7E8A584CB0CAC2473B6FE099481078B6 /* Frameworks */,
+				B400F3486DE23D5963213054EC6223A5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				870BC3248E9159554342DAB693F253D5 /* PBXTargetDependency */,
+				BD815AC4F9C529C5D9ECC4B5727EFBE8 /* PBXTargetDependency */,
+			);
+			name = "Pods-PocketRocketNews";
+			productName = "Pods-PocketRocketNews";
+			productReference = 24CA02D10F42EFCB71C02858B9045B03 /* Pods_PocketRocketNews.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -343,23 +470,41 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 62F09BA5E581371EC1722258E05062BB /* Products */;
+			productRefGroup = 125E20B45349B1D7F0CA92BDED0E6D5C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D35BADDA5839E297E691E7F01CDAC3E3 /* Pods-PocketRocketNews */,
+				88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */,
+				F19FCBA062D599B32AB520C4025E2CBE /* Pods-PocketRocketNews */,
 				E21960FA6C39B3EA012D2266027D08A4 /* Pods-PocketRocketNewsTests */,
-				93D01D4BCD0327DDA96873BB56111DCE /* Reusable */,
+				0C18DACBA59D29BF1D8D1CF18A5D0AB1 /* Reusable */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5AFFAC6EFD753BD9F657394B77864E4F /* Sources */ = {
+		32B9974868188C4803318E36329C87FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E75639ED1AC6B5E19E3128CE168A76D /* Pods-PocketRocketNews-dummy.m in Sources */,
+				9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */,
+				A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */,
+				F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */,
+				61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */,
+				B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */,
+				A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */,
+				EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */,
+				BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */,
+				5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */,
+				CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */,
+				F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */,
+				7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */,
+				62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */,
+				7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */,
+				AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */,
+				3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */,
+				10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */,
+				BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,101 +516,78 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F56D6E5ECE9CA97AFC82B69221B2A4C4 /* Sources */ = {
+		9E0DDC4414237A5F9B18F1C4A1E9AE1D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3F5BFBEEB1A8E3B36C62DC4D7D38E6C /* NibLoadable.swift in Sources */,
-				8FEE90720341678DA39BA9A891E692D9 /* NibOwnerLoadable.swift in Sources */,
-				BC10F7B68131F0CC3FFF94704ADF9841 /* Reusable-dummy.m in Sources */,
-				CDF4736ECF2AEF356D4B08ACAB8A6ED6 /* Reusable.swift in Sources */,
-				AA28ABA6AEFC413D703903DE7B027869 /* StoryboardBased.swift in Sources */,
-				72F108F4163EA43559806ECBBF239F80 /* StoryboardSceneBased.swift in Sources */,
-				A46E5928AC08E8DD49E1C44A5586F84D /* UICollectionView+Reusable.swift in Sources */,
-				649E10EF53F6062D6C1A2BB1C751CC92 /* UITableView+Reusable.swift in Sources */,
+				361FB96E8CCDD78464866E8054992A65 /* NibLoadable.swift in Sources */,
+				687A51F7687FFA26FF180B6D23CD7860 /* NibOwnerLoadable.swift in Sources */,
+				8ECFE1C90CC1A64A491668AA7A9CCB29 /* Reusable-dummy.m in Sources */,
+				5B5661D57938222CFC1B100803465DFB /* Reusable.swift in Sources */,
+				5D614B831779FDCFE262AA836AA0C460 /* StoryboardBased.swift in Sources */,
+				06DE3701A741323044607BDE0B6B6009 /* StoryboardSceneBased.swift in Sources */,
+				CDCE4C01423C77F118EAD51F09377689 /* UICollectionView+Reusable.swift in Sources */,
+				1D759C3A3F13999A42501475BFF7E56F /* UITableView+Reusable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D712530694ED4FF04AE3176EA359E66F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A01D52124772C956AEFE9515ADD1B510 /* Pods-PocketRocketNews-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5FB8EB6FE4E70A3D3FA26E5494CD6B4B /* PBXTargetDependency */ = {
+		870BC3248E9159554342DAB693F253D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
+			targetProxy = 56709C161FE66D835021584323E038AD /* PBXContainerItemProxy */;
+		};
+		BD815AC4F9C529C5D9ECC4B5727EFBE8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Reusable;
-			target = 93D01D4BCD0327DDA96873BB56111DCE /* Reusable */;
-			targetProxy = 216201BC5006D36F46BDA019259EA7CD /* PBXContainerItemProxy */;
+			target = 0C18DACBA59D29BF1D8D1CF18A5D0AB1 /* Reusable */;
+			targetProxy = 5D553B9D7B359AB3F4E15A7B14D40691 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		058D55116F76B4ACDDF2B63AC6DA92B2 /* Debug */ = {
+		0A29B6F510198AF64EFD762EF6FA97A5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 25C6C3B7588B028C6C726000189D99FB /* Reusable.xcconfig */;
+			baseConfigurationReference = 1ABE1436D35F63AC579E9D38E8294BD1 /* Alamofire.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Reusable/Reusable-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Reusable/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Reusable/Reusable.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Reusable;
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
-		};
-		43480AB8CA5F15870DCFE099D20F1B33 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F7D892905C658473A2AE366BE3C26B52 /* Pods-PocketRocketNews.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-PocketRocketNews/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PocketRocketNews/Pods-PocketRocketNews.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_PocketRocketNews;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
+			name = Release;
 		};
 		673254EEAF0B5BF4596080C749645884 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -507,6 +629,107 @@
 			};
 			name = Release;
 		};
+		77D26B71680B989C8DF4CC3EA6102325 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59ACC40CD2BB20DBECC35E3D62A91A93 /* Reusable.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Reusable/Reusable-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Reusable/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Reusable/Reusable.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Reusable;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8813A7631ADFA81F91B6AABA8666F8F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7D892905C658473A2AE366BE3C26B52 /* Pods-PocketRocketNews.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PocketRocketNews/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PocketRocketNews/Pods-PocketRocketNews.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PocketRocketNews;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9411F195FE35433362D0C7286EACA349 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59ACC40CD2BB20DBECC35E3D62A91A93 /* Reusable.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Reusable/Reusable-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Reusable/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Reusable/Reusable.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Reusable;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		ACA0F509941163474DE0BE86259410FD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0A571F8AFB4471E37038A71134263CFB /* Pods-PocketRocketNewsTests.debug.xcconfig */;
@@ -541,41 +764,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		B1C0925DCFCD0EEF0ACAF3EB705C4474 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3F400DD40B7CAF18600E404E88909E02 /* Pods-PocketRocketNews.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-PocketRocketNews/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PocketRocketNews/Pods-PocketRocketNews.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_PocketRocketNews;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -621,9 +809,9 @@
 			};
 			name = Debug;
 		};
-		F9FF9E1DAA42F86DA0CB4AFB840E2F68 /* Release */ = {
+		E930C2FBE0933579BB0EDF0A523911A9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 25C6C3B7588B028C6C726000189D99FB /* Reusable.xcconfig */;
+			baseConfigurationReference = 3F400DD40B7CAF18600E404E88909E02 /* Pods-PocketRocketNews.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -636,22 +824,58 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Reusable/Reusable-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Reusable/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-PocketRocketNews/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Reusable/Reusable.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PocketRocketNews/Pods-PocketRocketNews.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Reusable;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PocketRocketNews;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		F383079BFBF927813EA3613CFB679FDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1ABE1436D35F63AC579E9D38E8294BD1 /* Alamofire.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		FC301EF553BB110269B1B9CE8D93D459 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -700,11 +924,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4924DA220E41EFC0537BDD07020DD48F /* Build configuration list for PBXNativeTarget "Pods-PocketRocketNews" */ = {
+		406EA2F655C7AD3FD10972F0718CAEB8 /* Build configuration list for PBXNativeTarget "Pods-PocketRocketNews" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				43480AB8CA5F15870DCFE099D20F1B33 /* Debug */,
-				B1C0925DCFCD0EEF0ACAF3EB705C4474 /* Release */,
+				8813A7631ADFA81F91B6AABA8666F8F6 /* Debug */,
+				E930C2FBE0933579BB0EDF0A523911A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		419E5D95491847CD79841B971A8A3277 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F383079BFBF927813EA3613CFB679FDE /* Debug */,
+				0A29B6F510198AF64EFD762EF6FA97A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5366122C8CB50547668F8E47A2BB060E /* Build configuration list for PBXNativeTarget "Reusable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9411F195FE35433362D0C7286EACA349 /* Debug */,
+				77D26B71680B989C8DF4CC3EA6102325 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -714,15 +956,6 @@
 			buildConfigurations = (
 				ACA0F509941163474DE0BE86259410FD /* Debug */,
 				FC301EF553BB110269B1B9CE8D93D459 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C54B13B0EAE6345387423DD138882CCF /* Build configuration list for PBXNativeTarget "Reusable" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				058D55116F76B4ACDDF2B63AC6DA92B2 /* Debug */,
-				F9FF9E1DAA42F86DA0CB4AFB840E2F68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

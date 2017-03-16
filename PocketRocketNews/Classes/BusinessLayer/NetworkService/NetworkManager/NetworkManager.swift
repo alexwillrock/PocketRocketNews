@@ -1,16 +1,13 @@
 //
-//  FeedList.swift
+//  NetworkManager.swift
 //  PocketRocketNews
 //
 //  Created by Алексей on 16.03.17.
 //  Copyright © 2017 Алексей. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-struct FeedList {
-    
-    let items: [FeedItem]
-    let source: Source
-    
+final class NetworkManager {
+
 }
