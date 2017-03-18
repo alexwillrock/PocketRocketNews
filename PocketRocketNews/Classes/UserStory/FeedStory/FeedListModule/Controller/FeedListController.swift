@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct FeedListController {
+final class FeedListController {
     
     var delegate: FeedListControllerDelegate?
     

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DbI-FR-HbI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Source Edit View Controller-->
+        <scene sceneID="OMA-Mx-Czu">
+            <objects>
+                <viewController id="Wp8-0h-Zwj" customClass="SourceEditViewController" customModule="PocketRocketNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="K7y-8s-iLJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="urV-4l-ASZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JG2-hg-4d2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8O1-2N-MEN">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8O1-2N-MEN" firstAttribute="leading" secondItem="JG2-hg-4d2" secondAttribute="leading" id="Ctf-Bi-P0h"/>
+                            <constraint firstItem="urV-4l-ASZ" firstAttribute="top" secondItem="8O1-2N-MEN" secondAttribute="bottom" id="Dut-Nx-eDY"/>
+                            <constraint firstAttribute="trailing" secondItem="8O1-2N-MEN" secondAttribute="trailing" id="SaF-u8-zwM"/>
+                            <constraint firstItem="8O1-2N-MEN" firstAttribute="top" secondItem="K7y-8s-iLJ" secondAttribute="bottom" id="hDG-n0-sxa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="FJN-he-JlV">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="edit" id="V6I-aW-RHK">
+                                <connections>
+                                    <action selector="didTapEdit:" destination="Wp8-0h-Zwj" id="znv-c2-6ef"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="add" id="svN-Dr-kIq">
+                                <connections>
+                                    <action selector="didTapAdd:" destination="Wp8-0h-Zwj" id="y2R-hR-UeK"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="add" destination="svN-Dr-kIq" id="ojr-eg-5F0"/>
+                        <outlet property="edit" destination="V6I-aW-RHK" id="Ueo-tf-HF8"/>
+                        <outlet property="tableView" destination="8O1-2N-MEN" id="4ad-R2-aOy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eCX-qp-Vzc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2012" y="250.52473763118442"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0YO-Xx-jIU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DbI-FR-HbI" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CNu-1q-2h6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Wp8-0h-Zwj" kind="relationship" relationship="rootViewController" id="U2h-30-hjt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Esb-1q-S5u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1072.8" y="250.52473763118442"/>
+        </scene>
+    </scenes>
+</document>

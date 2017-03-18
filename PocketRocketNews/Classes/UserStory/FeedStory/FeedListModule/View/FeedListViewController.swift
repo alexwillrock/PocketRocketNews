@@ -20,7 +20,7 @@ final class FeedListViewController: BaseViewController {
     fileprivate let kHeight: CGFloat = 120.0
     
     fileprivate var controller: FeedListController {
-        var _controller = FeedListController()
+        let _controller = FeedListController()
         _controller.delegate = self;
         return _controller;
     }
@@ -33,6 +33,9 @@ final class FeedListViewController: BaseViewController {
         tableView.dataSource = self
         
         tableView.rowHeight = kHeight
+        
+        self.title = "Привет"
+        
         // Do any additional setup after loading the view.
     }
 }

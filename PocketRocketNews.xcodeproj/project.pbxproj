@@ -11,6 +11,11 @@
 		1972B0B57DA0F161EA9249F6 /* Pods_PocketRocketNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71B267ECE8C2F206B19C70CD /* Pods_PocketRocketNews.framework */; };
 		63497ABF1E7D0085004CEC7F /* FeedListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63497ABD1E7D0085004CEC7F /* FeedListCell.swift */; };
 		63497AC01E7D0085004CEC7F /* FeedListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63497ABE1E7D0085004CEC7F /* FeedListCell.xib */; };
+		63497AC51E7D0D78004CEC7F /* MenuStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63497AC41E7D0D78004CEC7F /* MenuStoryboard.storyboard */; };
+		63497ACA1E7D0F50004CEC7F /* SettingsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63497AC91E7D0F50004CEC7F /* SettingsStoryboard.storyboard */; };
+		63497ACE1E7D169D004CEC7F /* SourceEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63497ACD1E7D169D004CEC7F /* SourceEditViewController.swift */; };
+		63497AD01E7D16B6004CEC7F /* SourceEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63497ACF1E7D16B6004CEC7F /* SourceEditController.swift */; };
+		63497AD21E7D16D8004CEC7F /* SourceEditControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63497AD11E7D16D8004CEC7F /* SourceEditControllerDelegate.swift */; };
 		638915A61E7CD3C4002DBDCF /* XMLParseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638915A51E7CD3C4002DBDCF /* XMLParseService.swift */; };
 		638915A81E7CD3F1002DBDCF /* SWXMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638915A71E7CD3F1002DBDCF /* SWXMLParser.swift */; };
 		63CBDD0F1E7A464D00D5A448 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBDD0E1E7A464D00D5A448 /* AppDelegate.swift */; };
@@ -51,6 +56,11 @@
 		3CD2455FE2D31676CDCD26A3 /* Pods_PocketRocketNewsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PocketRocketNewsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63497ABD1E7D0085004CEC7F /* FeedListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedListCell.swift; sourceTree = "<group>"; };
 		63497ABE1E7D0085004CEC7F /* FeedListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedListCell.xib; sourceTree = "<group>"; };
+		63497AC41E7D0D78004CEC7F /* MenuStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MenuStoryboard.storyboard; sourceTree = "<group>"; };
+		63497AC91E7D0F50004CEC7F /* SettingsStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SettingsStoryboard.storyboard; sourceTree = "<group>"; };
+		63497ACD1E7D169D004CEC7F /* SourceEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceEditViewController.swift; sourceTree = "<group>"; };
+		63497ACF1E7D16B6004CEC7F /* SourceEditController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceEditController.swift; sourceTree = "<group>"; };
+		63497AD11E7D16D8004CEC7F /* SourceEditControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceEditControllerDelegate.swift; sourceTree = "<group>"; };
 		638915A51E7CD3C4002DBDCF /* XMLParseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLParseService.swift; sourceTree = "<group>"; };
 		638915A71E7CD3F1002DBDCF /* SWXMLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWXMLParser.swift; sourceTree = "<group>"; };
 		63CBDD0B1E7A464D00D5A448 /* PocketRocketNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketRocketNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,8 +157,52 @@
 		63497AC31E7D0D58004CEC7F /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				63497AC41E7D0D78004CEC7F /* MenuStoryboard.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		63497AC61E7D0F22004CEC7F /* SettingsStory */ = {
+			isa = PBXGroup;
+			children = (
+				63497AC71E7D0F22004CEC7F /* SourceEditModule */,
+				63497AC81E7D0F3C004CEC7F /* Storyboard */,
+			);
+			path = SettingsStory;
+			sourceTree = "<group>";
+		};
+		63497AC71E7D0F22004CEC7F /* SourceEditModule */ = {
+			isa = PBXGroup;
+			children = (
+				63497ACB1E7D1686004CEC7F /* Controller */,
+				63497ACC1E7D1686004CEC7F /* View */,
+			);
+			path = SourceEditModule;
+			sourceTree = "<group>";
+		};
+		63497AC81E7D0F3C004CEC7F /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				63497AC91E7D0F50004CEC7F /* SettingsStoryboard.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		63497ACB1E7D1686004CEC7F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				63497ACF1E7D16B6004CEC7F /* SourceEditController.swift */,
+				63497AD11E7D16D8004CEC7F /* SourceEditControllerDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		63497ACC1E7D1686004CEC7F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				63497ACD1E7D169D004CEC7F /* SourceEditViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		638915A41E7CD3B2002DBDCF /* XMLParseService */ = {
@@ -242,6 +296,7 @@
 		63CBDD321E7A47D200D5A448 /* UserStory */ = {
 			isa = PBXGroup;
 			children = (
+				63497AC61E7D0F22004CEC7F /* SettingsStory */,
 				63497AC11E7D0D58004CEC7F /* MenuStory */,
 				63CBDD391E7A482000D5A448 /* BaseModule */,
 				63CBDD331E7A47D200D5A448 /* FeedStory */,
@@ -487,7 +542,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				63497AC01E7D0085004CEC7F /* FeedListCell.xib in Resources */,
+				63497ACA1E7D0F50004CEC7F /* SettingsStoryboard.storyboard in Resources */,
 				63F8C0471E7A4E4700EFC47C /* EmptyView.xib in Resources */,
+				63497AC51E7D0D78004CEC7F /* MenuStoryboard.storyboard in Resources */,
 				63CBDD191E7A464D00D5A448 /* LaunchScreen.storyboard in Resources */,
 				63F8C04D1E7A5F0400EFC47C /* FeedStoryboard.storyboard in Resources */,
 				63CBDD161E7A464D00D5A448 /* Assets.xcassets in Resources */,
@@ -605,9 +662,11 @@
 				63F8C0511E7A5F3100EFC47C /* FeedListController.swift in Sources */,
 				63497ABF1E7D0085004CEC7F /* FeedListCell.swift in Sources */,
 				63F8C0491E7A597B00EFC47C /* EmptyViewDelegate.swift in Sources */,
+				63497AD01E7D16B6004CEC7F /* SourceEditController.swift in Sources */,
 				63F8C0601E7AAED800EFC47C /* NetworkManager.swift in Sources */,
 				638915A81E7CD3F1002DBDCF /* SWXMLParser.swift in Sources */,
 				638915A61E7CD3C4002DBDCF /* XMLParseService.swift in Sources */,
+				63497ACE1E7D169D004CEC7F /* SourceEditViewController.swift in Sources */,
 				63F8C0451E7A4CD800EFC47C /* EmptyView.swift in Sources */,
 				63F8C0651E7ABD9A00EFC47C /* SourceRequest.swift in Sources */,
 				63CBDD0F1E7A464D00D5A448 /* AppDelegate.swift in Sources */,
@@ -618,6 +677,7 @@
 				63F8C05B1E7AAE4200EFC47C /* SourceList.swift in Sources */,
 				63F8C0621E7AAF3B00EFC47C /* Request.swift in Sources */,
 				63CBDD3E1E7A484200D5A448 /* BaseViewController.swift in Sources */,
+				63497AD21E7D16D8004CEC7F /* SourceEditControllerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -751,6 +811,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4S24Y6Z9M9;
 				INFOPLIST_FILE = PocketRocketNews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WR.PocketRocketNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -765,6 +826,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4S24Y6Z9M9;
 				INFOPLIST_FILE = PocketRocketNews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WR.PocketRocketNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
