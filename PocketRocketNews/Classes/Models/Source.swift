@@ -12,5 +12,5 @@ struct Source {
     
     let name: String
     let link: URL
-    
+    let items: [FeedItem]
 }

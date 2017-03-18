@@ -9,6 +9,7 @@ target 'PocketRocketNews' do
 
  	pod 'Reusable'
  	pod 'Alamofire', '~> 4.4'
+  pod 'SWXMLHash', '~> 3.0.0'
 
   target 'PocketRocketNewsTests' do
     inherit! :search_paths
