@@ -183,6 +183,7 @@
 		63497AC81E7D0F3C004CEC7F /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				63497AD31E7D1897004CEC7F /* Cells */,
 				63497AC91E7D0F50004CEC7F /* SettingsStoryboard.storyboard */,
 			);
 			path = Storyboard;
@@ -203,6 +204,13 @@
 				63497ACD1E7D169D004CEC7F /* SourceEditViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		63497AD31E7D1897004CEC7F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		638915A41E7CD3B2002DBDCF /* XMLParseService */ = {

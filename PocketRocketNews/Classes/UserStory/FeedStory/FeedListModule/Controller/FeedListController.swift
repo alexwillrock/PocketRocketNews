@@ -12,4 +12,5 @@ final class FeedListController {
     
     var delegate: FeedListControllerDelegate?
     
+    
 }

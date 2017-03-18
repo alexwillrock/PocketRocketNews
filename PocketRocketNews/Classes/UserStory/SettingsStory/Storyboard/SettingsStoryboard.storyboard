@@ -23,35 +23,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8O1-2N-MEN">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="8O1-2N-MEN" firstAttribute="leading" secondItem="JG2-hg-4d2" secondAttribute="leading" id="Ctf-Bi-P0h"/>
-                            <constraint firstItem="urV-4l-ASZ" firstAttribute="top" secondItem="8O1-2N-MEN" secondAttribute="bottom" id="Dut-Nx-eDY"/>
-                            <constraint firstAttribute="trailing" secondItem="8O1-2N-MEN" secondAttribute="trailing" id="SaF-u8-zwM"/>
-                            <constraint firstItem="8O1-2N-MEN" firstAttribute="top" secondItem="K7y-8s-iLJ" secondAttribute="bottom" id="hDG-n0-sxa"/>
+                            <constraint firstItem="urV-4l-ASZ" firstAttribute="top" secondItem="8O1-2N-MEN" secondAttribute="bottom" id="QPS-Ah-5mY"/>
+                            <constraint firstAttribute="trailing" secondItem="8O1-2N-MEN" secondAttribute="trailing" id="hYj-uE-kds"/>
+                            <constraint firstItem="8O1-2N-MEN" firstAttribute="top" secondItem="JG2-hg-4d2" secondAttribute="top" id="opM-mQ-T2f"/>
+                            <constraint firstItem="8O1-2N-MEN" firstAttribute="leading" secondItem="JG2-hg-4d2" secondAttribute="leading" id="srV-Uw-RfH"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="FJN-he-JlV">
+                    <navigationItem key="navigationItem" id="q6F-p2-Onk">
                         <rightBarButtonItems>
-                            <barButtonItem systemItem="edit" id="V6I-aW-RHK">
+                            <barButtonItem systemItem="edit" id="2QU-08-6tj">
                                 <connections>
-                                    <action selector="didTapEdit:" destination="Wp8-0h-Zwj" id="znv-c2-6ef"/>
+                                    <action selector="didTapEdit:" destination="Wp8-0h-Zwj" id="IzF-vI-Gbu"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem systemItem="add" id="svN-Dr-kIq">
+                            <barButtonItem systemItem="add" id="bgI-o9-xpi">
                                 <connections>
-                                    <action selector="didTapAdd:" destination="Wp8-0h-Zwj" id="y2R-hR-UeK"/>
+                                    <action selector="didTapAdd:" destination="Wp8-0h-Zwj" id="4sJ-bA-9k8"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
-                        <outlet property="add" destination="svN-Dr-kIq" id="ojr-eg-5F0"/>
-                        <outlet property="edit" destination="V6I-aW-RHK" id="Ueo-tf-HF8"/>
                         <outlet property="tableView" destination="8O1-2N-MEN" id="4ad-R2-aOy"/>
                     </connections>
                 </viewController>

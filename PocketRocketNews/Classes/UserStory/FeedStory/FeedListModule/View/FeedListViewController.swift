@@ -34,7 +34,7 @@ final class FeedListViewController: BaseViewController {
         
         tableView.rowHeight = kHeight
         
-        self.title = "Привет"
+        self.title = "RSS Новости"
         
         // Do any additional setup after loading the view.
     }

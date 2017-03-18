@@ -24,7 +24,7 @@ final class SourceEditViewController: UIViewController {
     
     //MARK: Private
     
-    fileprivate let kHeight: CGFloat = 120.0
+    fileprivate let kHeight: CGFloat = 44.0
     
     fileprivate var controller: SourceEditController {
         let _controller = SourceEditController()
@@ -34,10 +34,46 @@ final class SourceEditViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupTableView()
+        
+        self.title = "RSS Новости"
 
         // Do any additional setup after loading the view.
     }
+    
+    private func setupTableView(){
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        tableView.rowHeight = kHeight
+        
+    }
+}
 
+extension SourceEditViewController: UITableViewDataSource{
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = UITableViewCell(style: .default, reuseIdentifier: "SourceCell")
+        
+        cell.textLabel?.text = "URL или Название источника"
+        return cell
+    }
+    
+}
+
+extension SourceEditViewController: UITableViewDelegate{
+    
 }
 
 extension SourceEditViewController: SourceEditControllerDelegate{
