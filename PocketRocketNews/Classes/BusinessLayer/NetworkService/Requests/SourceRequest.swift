@@ -12,29 +12,18 @@ import SWXMLHash
 
 struct SourceRequest: Request {
     
-    static func getFeedList(){
+    private let parser = SWXMLParser()
+    
+    func getFeedList(_ complete:@escaping (_ result: Source?) -> Void,
+                            failedBlock failed:@escaping (_ error: Error) -> Void){
         
         NetworkManager.request(at: "http://www.aweber.com/blog/feed/", with: .post, and: Parameters(), complete: { (response) in
-            
-            let xml = SWXMLHash.config {
-                config in
-                config.shouldProcessLazily = true
-                }.parse(response.data!)
-            
-            do {
-                
-                for item in xml["rss"]["channel"]["item"] {
-                    //print(item.all)
-                    print(item["title"].element?.text)
-                }
-                
-            }catch{
-                
-            }
-    
+
+            complete(self.parser.source(object: response?.data))
             
         }) { (error) in
             
+            print(error.localizedDescription)
         }
     }
 }

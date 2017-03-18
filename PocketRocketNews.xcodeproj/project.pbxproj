@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1433723298A4A09FD7E5D197 /* Pods_PocketRocketNewsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CD2455FE2D31676CDCD26A3 /* Pods_PocketRocketNewsTests.framework */; };
 		1972B0B57DA0F161EA9249F6 /* Pods_PocketRocketNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71B267ECE8C2F206B19C70CD /* Pods_PocketRocketNews.framework */; };
+		638915A61E7CD3C4002DBDCF /* XMLParseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638915A51E7CD3C4002DBDCF /* XMLParseService.swift */; };
+		638915A81E7CD3F1002DBDCF /* SWXMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638915A71E7CD3F1002DBDCF /* SWXMLParser.swift */; };
 		63CBDD0F1E7A464D00D5A448 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBDD0E1E7A464D00D5A448 /* AppDelegate.swift */; };
 		63CBDD161E7A464D00D5A448 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63CBDD151E7A464D00D5A448 /* Assets.xcassets */; };
 		63CBDD191E7A464D00D5A448 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63CBDD171E7A464D00D5A448 /* LaunchScreen.storyboard */; };
@@ -45,6 +47,8 @@
 		3394733E1B7CC5D4DA04042F /* Pods-PocketRocketNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketRocketNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PocketRocketNews/Pods-PocketRocketNews.debug.xcconfig"; sourceTree = "<group>"; };
 		392A2AC3F60333B3DBE0A0E0 /* Pods-PocketRocketNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketRocketNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-PocketRocketNews/Pods-PocketRocketNews.release.xcconfig"; sourceTree = "<group>"; };
 		3CD2455FE2D31676CDCD26A3 /* Pods_PocketRocketNewsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PocketRocketNewsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		638915A51E7CD3C4002DBDCF /* XMLParseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLParseService.swift; sourceTree = "<group>"; };
+		638915A71E7CD3F1002DBDCF /* SWXMLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWXMLParser.swift; sourceTree = "<group>"; };
 		63CBDD0B1E7A464D00D5A448 /* PocketRocketNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketRocketNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63CBDD0E1E7A464D00D5A448 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../../AppDelegate.swift; sourceTree = "<group>"; };
 		63CBDD151E7A464D00D5A448 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -101,6 +105,15 @@
 				BD1AC620980FF25CF61884CF /* Pods-PocketRocketNewsTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		638915A41E7CD3B2002DBDCF /* XMLParseService */ = {
+			isa = PBXGroup;
+			children = (
+				638915A51E7CD3C4002DBDCF /* XMLParseService.swift */,
+				638915A71E7CD3F1002DBDCF /* SWXMLParser.swift */,
+			);
+			path = XMLParseService;
 			sourceTree = "<group>";
 		};
 		63CBDD021E7A464D00D5A448 = {
@@ -166,6 +179,7 @@
 		63CBDD301E7A47D200D5A448 /* BusinessLayer */ = {
 			isa = PBXGroup;
 			children = (
+				638915A41E7CD3B2002DBDCF /* XMLParseService */,
 				63F8C05C1E7AAEC000EFC47C /* NetworkService */,
 			);
 			path = BusinessLayer;
@@ -544,6 +558,8 @@
 				63F8C0511E7A5F3100EFC47C /* FeedListController.swift in Sources */,
 				63F8C0491E7A597B00EFC47C /* EmptyViewDelegate.swift in Sources */,
 				63F8C0601E7AAED800EFC47C /* NetworkManager.swift in Sources */,
+				638915A81E7CD3F1002DBDCF /* SWXMLParser.swift in Sources */,
+				638915A61E7CD3C4002DBDCF /* XMLParseService.swift in Sources */,
 				63F8C0451E7A4CD800EFC47C /* EmptyView.swift in Sources */,
 				63F8C0651E7ABD9A00EFC47C /* SourceRequest.swift in Sources */,
 				63CBDD0F1E7A464D00D5A448 /* AppDelegate.swift in Sources */,
