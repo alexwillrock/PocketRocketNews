@@ -10,6 +10,7 @@ target 'PocketRocketNews' do
  	pod 'Reusable'
  	pod 'Alamofire', '~> 4.4'
 	pod 'AEXML'
+	pod "MagicalRecord"
 
   target 'PocketRocketNewsTests' do
     inherit! :search_paths
