@@ -11,6 +11,8 @@ import Alamofire
 
 struct SourceRequest: Request {
     
+    private let parser = XMLParser.fabrick()
+    
     func getFeedList(_ complete:@escaping (_ result: Source?) -> Void,
                             failedBlock failed:@escaping (_ error: Error) -> Void){
     
@@ -20,9 +22,9 @@ struct SourceRequest: Request {
         
         NetworkManager.request(at: path, with: .post, and: Parameters(), complete: { (response) in
 
-            debugPrint(response)
+            debugPrint(response ?? "")
             
-    //        complete(self.parser.source(object: response?.data))
+            complete(self.parser.source(object: response?.data))
             
         }) { (error) in
             

@@ -11,6 +11,6 @@ import Foundation
 struct Source {
     
     let name: String
-    let link: URL
+    let link: URL?
     let items: [FeedItem]
 }

@@ -12,3 +12,10 @@ protocol XMLParseService {
     
     func source(object: Data?) -> Source?
 }
+
+struct XMLParser{
+    
+    static func fabrick() -> XMLParseService{
+        return AEXMLParser()
+    }
+}

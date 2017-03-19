@@ -10,9 +10,8 @@ import Foundation
 
 struct FeedItem {
     
-    let link: URL
     let title: String
     let text: String
     let pubDate: Date
-    let image: URL
+    let image: URL?
 }
