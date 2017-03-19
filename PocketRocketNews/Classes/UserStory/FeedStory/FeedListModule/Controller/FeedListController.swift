@@ -10,6 +10,8 @@ import Foundation
 
 final class FeedListController {
     
+    private let sss = SourceSaveService()
+    
     var delegate: FeedListControllerDelegate?
     
     fileprivate let sourceReguest = SourceRequest()
@@ -17,6 +19,11 @@ final class FeedListController {
     func getSources(){
         
         sourceReguest.getFeedList({ (source) in
+                        
+            if let s = source{
+                self.sss.save(s)
+            }
+            
             
         }) { (error) in
             

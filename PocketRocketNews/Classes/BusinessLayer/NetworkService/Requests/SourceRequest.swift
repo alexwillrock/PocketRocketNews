@@ -21,8 +21,6 @@ struct SourceRequest: Request {
         let path = "http://www.aweber.com/blog/feed/"
         
         NetworkManager.request(at: path, with: .post, and: Parameters(), complete: { (response) in
-
-            debugPrint(response ?? "")
             
             complete(self.parser.source(object: response?.data))
             

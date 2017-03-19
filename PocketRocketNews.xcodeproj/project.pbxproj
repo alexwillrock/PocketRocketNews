@@ -23,6 +23,7 @@
 		63A22AEB1E7E811B00431A32 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A22AE81E7E811B00431A32 /* Source.swift */; };
 		63A22AEC1E7E811B00431A32 /* SourceList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A22AE91E7E811B00431A32 /* SourceList.swift */; };
 		63A22AEF1E7E814200431A32 /* PocketRocketNews.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 63A22AED1E7E814200431A32 /* PocketRocketNews.xcdatamodeld */; };
+		63A22AF21E7E865B00431A32 /* SourceSaveService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A22AF11E7E865B00431A32 /* SourceSaveService.swift */; };
 		63CBDD0F1E7A464D00D5A448 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBDD0E1E7A464D00D5A448 /* AppDelegate.swift */; };
 		63CBDD161E7A464D00D5A448 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63CBDD151E7A464D00D5A448 /* Assets.xcassets */; };
 		63CBDD191E7A464D00D5A448 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63CBDD171E7A464D00D5A448 /* LaunchScreen.storyboard */; };
@@ -70,6 +71,7 @@
 		63A22AE81E7E811B00431A32 /* Source.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
 		63A22AE91E7E811B00431A32 /* SourceList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceList.swift; sourceTree = "<group>"; };
 		63A22AEE1E7E814200431A32 /* PocketRocketNews.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PocketRocketNews.xcdatamodel; sourceTree = "<group>"; };
+		63A22AF11E7E865B00431A32 /* SourceSaveService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceSaveService.swift; sourceTree = "<group>"; };
 		63CBDD0B1E7A464D00D5A448 /* PocketRocketNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketRocketNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63CBDD0E1E7A464D00D5A448 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../../AppDelegate.swift; sourceTree = "<group>"; };
 		63CBDD151E7A464D00D5A448 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -252,6 +254,14 @@
 			path = PlainObject;
 			sourceTree = "<group>";
 		};
+		63A22AF01E7E864900431A32 /* CoreDataService */ = {
+			isa = PBXGroup;
+			children = (
+				63A22AF11E7E865B00431A32 /* SourceSaveService.swift */,
+			);
+			path = CoreDataService;
+			sourceTree = "<group>";
+		};
 		63CBDD021E7A464D00D5A448 = {
 			isa = PBXGroup;
 			children = (
@@ -315,6 +325,7 @@
 		63CBDD301E7A47D200D5A448 /* BusinessLayer */ = {
 			isa = PBXGroup;
 			children = (
+				63A22AF01E7E864900431A32 /* CoreDataService */,
 				63A22AE21E7E66CC00431A32 /* Helpers */,
 				638915A41E7CD3B2002DBDCF /* XMLParseService */,
 				63F8C05C1E7AAEC000EFC47C /* NetworkService */,
@@ -700,6 +711,7 @@
 				63A22AE41E7E66DC00431A32 /* Helpers.swift in Sources */,
 				63F8C0511E7A5F3100EFC47C /* FeedListController.swift in Sources */,
 				63497ABF1E7D0085004CEC7F /* FeedListCell.swift in Sources */,
+				63A22AF21E7E865B00431A32 /* SourceSaveService.swift in Sources */,
 				63F8C0491E7A597B00EFC47C /* EmptyViewDelegate.swift in Sources */,
 				63497AD01E7D16B6004CEC7F /* SourceEditController.swift in Sources */,
 				63A22AEA1E7E811B00431A32 /* FeedItem.swift in Sources */,
