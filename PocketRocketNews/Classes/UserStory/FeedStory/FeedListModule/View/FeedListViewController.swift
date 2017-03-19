@@ -36,6 +36,8 @@ final class FeedListViewController: BaseViewController {
         
         self.title = "RSS Новости"
         
+        controller.getSources()
+        
         // Do any additional setup after loading the view.
     }
 }

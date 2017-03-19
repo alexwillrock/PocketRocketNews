@@ -12,5 +12,14 @@ final class FeedListController {
     
     var delegate: FeedListControllerDelegate?
     
+    fileprivate let sourceReguest = SourceRequest()
     
+    func getSources(){
+        
+        sourceReguest.getFeedList({ (source) in
+            
+        }) { (error) in
+            
+        }
+    }
 }

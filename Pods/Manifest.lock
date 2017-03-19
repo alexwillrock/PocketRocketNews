@@ -1,22 +1,22 @@
 PODS:
+  - AEXML (4.0.2)
   - Alamofire (4.4.0)
   - Reusable (4.0.0):
     - Reusable/Storyboard (= 4.0.0)
     - Reusable/View (= 4.0.0)
   - Reusable/Storyboard (4.0.0)
   - Reusable/View (4.0.0)
-  - SWXMLHash (3.0.4)
 
 DEPENDENCIES:
+  - AEXML
   - Alamofire (~> 4.4)
   - Reusable
-  - SWXMLHash (~> 3.0.0)
 
 SPEC CHECKSUMS:
+  AEXML: 7de81f28c6c876a210f31924acc2e326cd01e162
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
   Reusable: 98e5fff1e0e2e00872199699b276dde08ee56c07
-  SWXMLHash: 29d20b84692fc319ea8ed933058fe7d8d005139b
 
-PODFILE CHECKSUM: 3cba1b0a3f6723a312d061a7949b09719c66799a
+PODFILE CHECKSUM: a717ff63c7742d41d748e97605e5eaeca953942d
 
 COCOAPODS: 1.2.0

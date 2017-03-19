@@ -8,18 +8,21 @@
 
 import Foundation
 import Alamofire
-import SWXMLHash
 
 struct SourceRequest: Request {
     
-    private let parser = SWXMLParser()
-    
     func getFeedList(_ complete:@escaping (_ result: Source?) -> Void,
                             failedBlock failed:@escaping (_ error: Error) -> Void){
+    
+        //let path = "http://rss.cnn.com/rss/edition.rss"
         
-        NetworkManager.request(at: "http://www.aweber.com/blog/feed/", with: .post, and: Parameters(), complete: { (response) in
+        let path = "http://www.aweber.com/blog/feed/"
+        
+        NetworkManager.request(at: path, with: .post, and: Parameters(), complete: { (response) in
 
-            complete(self.parser.source(object: response?.data))
+            debugPrint(response)
+            
+    //        complete(self.parser.source(object: response?.data))
             
         }) { (error) in
             

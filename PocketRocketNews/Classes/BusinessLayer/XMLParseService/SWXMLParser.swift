@@ -7,27 +7,49 @@
 //
 
 import Foundation
-import SWXMLHash
+import AEXML
 
-final class SWXMLParser: XMLParseService{
-
-    func source(object: Data?)  -> Source? {
+final class AEXMLParser: XMLParseService{
+    
+    func source(object: Data?) -> Source? {
         
-        guard let data = object else {
-            return nil
-        }
+//        guard let data = object else { return nil }
+//        
+//        let options = AEXMLOptions()
+//    
+//        do {
+//            let xmlDoc = try AEXMLDocument(xml: data, options: options)
+//            //print(xmlDoc.xml)
+//
+//            
+//            for child in xmlDoc.root.children {
+//                print(child["channel"].xml)
+//                
+//                
+//               // print(child.xmlCompact)
+//        
+//            }
+//            
+//            print(xmlDoc.root["channel"].all)
+//             print(xmlDoc.root["channel"]["title"].value)
+//            //print(xmlDoc.root["channel"]["item"].xml)
+//            
+//            for child in xmlDoc.root["channel"]["item"].all!{
+//                let description = child["description"].string
+//                var result = description.firstImage() //"<img.*?src=\"([^\"]*)\"".firstMatchIn(string: description as NSString!, atRangeIndex: 1)
+//                print(result)
+//            }
+//            
+//        }catch{
+//            
+//            print("ошибка парсинга")
+//            
+//            return nil
+//        }
         
-        let xml = SWXMLHash.config {
-            config in
-            config.shouldProcessLazily = true
-            }.parse(data)
-
-        let channel = xml["rss"]["channel"]
         
-        let linkStr = channel["atom:link"].element?.attribute(by: "href")?.text
-        let title = channel["title"].element?.text
-        print(linkStr ?? "")
-        print(title ?? "")
+        //let xmlDoc = try AEXMLDocument(xml: data, options: nil)
+        
         
         return nil
     }
@@ -37,3 +59,4 @@ final class SWXMLParser: XMLParseService{
         return nil
     }
 }
+
