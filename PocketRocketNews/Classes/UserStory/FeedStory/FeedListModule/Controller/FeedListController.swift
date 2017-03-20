@@ -10,27 +10,22 @@ import Foundation
 
 final class FeedListController {
     
-    private let sss = SourceSaveService()
+   // private let sss = SourceSaveService()
     
     var delegate: FeedListControllerDelegate?
     
-    fileprivate let sourceReguest = SourceRequest()
-    
-    func getSources(){
-        
-        let paths = ["http://www.aweber.com/blog/feed/", "http://www.internetnews.com/icom_includes/feeds/inews/xml_front-10.xml"]
-        
-        for path in paths{
-            sourceReguest.getFeedList(atPath: path, { (source) in
-                
-                if let s = source{
-                    self.sss.save(s)
-                }
-                
-            }) { (error) in
-                
-            }
-        }
-
-    }
+//    fileprivate let sourceReguest = SourceRequest()
+//    
+//    func getSources(){
+//        
+//        sourceReguest.getFeedList(atPath: path, { (source) in
+//            
+//            if let s = source{
+//                self.sss.save(s)
+//            }
+//            
+//        }) { (error) in
+//            
+//        }
+//    }
 }

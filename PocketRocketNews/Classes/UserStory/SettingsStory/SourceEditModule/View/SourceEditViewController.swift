@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MagicalRecord
 
 final class SourceEditViewController: UIViewController {
 
@@ -17,12 +18,16 @@ final class SourceEditViewController: UIViewController {
     @IBOutlet weak var edit: UIBarButtonItem!
     
     @IBAction func didTapAdd(_ sender: UIBarButtonItem) {
+        
     }
     
     @IBAction func didTapEdit(_ sender: UIBarButtonItem) {
+        
     }
     
     //MARK: Private
+    
+    fileprivate var frc: NSFetchedResultsController<NSFetchRequestResult>!
     
     fileprivate let kHeight: CGFloat = 44.0
     
@@ -39,6 +44,8 @@ final class SourceEditViewController: UIViewController {
         
         self.title = "RSS Новости"
 
+        frc = SourceCD.mr_fetchAllSorted(by: "date", ascending: true, with: nil, groupBy: nil, delegate: self)
+        
         // Do any additional setup after loading the view.
     }
     
@@ -47,29 +54,45 @@ final class SourceEditViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
-        tableView.rowHeight = kHeight
-        
+        tableView.rowHeight = kHeight        
     }
 }
 
 extension SourceEditViewController: UITableViewDataSource{
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        
+        if let section = frc.sections{
+            return section.count
+        }
+        
+        return 0
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        
+        if let sectionData = frc.sections?[section]{
+            return sectionData.numberOfObjects
+        }
+        
+        return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = UITableViewCell(style: .default, reuseIdentifier: "SourceCell")
         
-        cell.textLabel?.text = "URL или Название источника"
+        configure(cell, at: indexPath)
+        
         return cell
     }
     
+    func configure(_ cell: UITableViewCell, at indexPath: IndexPath){
+        
+        if let object = frc.object(at: indexPath) as? SourceCD {
+            cell.textLabel?.text = object.name
+        }
+    }
 }
 
 extension SourceEditViewController: UITableViewDelegate{

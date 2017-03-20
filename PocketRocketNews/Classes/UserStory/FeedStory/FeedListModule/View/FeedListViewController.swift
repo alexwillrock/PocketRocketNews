@@ -8,7 +8,6 @@
 
 import UIKit
 import MagicalRecord
-import CoreData
 
 final class FeedListViewController: BaseViewController {
 
@@ -20,6 +19,7 @@ final class FeedListViewController: BaseViewController {
     //MARK: private
 
     fileprivate let kHeight: CGFloat = 120.0
+    fileprivate let kFetchLimit = 10
 
     fileprivate var frc: NSFetchedResultsController<NSFetchRequestResult>!
     
@@ -35,9 +35,13 @@ final class FeedListViewController: BaseViewController {
         self.title = "RSS Новости"
 
         setupTableView()
-
-        frc = FeedItemCD.mr_fetchAllGrouped(by: "source.name", with: nil, sortedBy: "source.date,date", ascending: true, delegate: self)
         
+        setupFRC()
+    }
+    
+    fileprivate func setupFRC(){
+        frc = FeedItemCD.mr_fetchAllGrouped(by: "source.name", with: nil, sortedBy: "source.date,date", ascending: true, delegate: self)
+        frc.fetchRequest.fetchLimit = kFetchLimit
     }
     
     fileprivate func setupTableView(){
@@ -47,12 +51,6 @@ final class FeedListViewController: BaseViewController {
         tableView.dataSource = self
         
         tableView.rowHeight = kHeight
-        
-    }
-    
-    @IBAction func tap(_ sender: Any) {
-        
-        controller.getSources()
         
     }
 }

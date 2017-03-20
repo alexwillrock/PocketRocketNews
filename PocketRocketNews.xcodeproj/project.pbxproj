@@ -19,6 +19,8 @@
 		638915A61E7CD3C4002DBDCF /* XMLParseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638915A51E7CD3C4002DBDCF /* XMLParseService.swift */; };
 		638915A81E7CD3F1002DBDCF /* AEXMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638915A71E7CD3F1002DBDCF /* AEXMLParser.swift */; };
 		6394C6F31E7F749F004C5CDB /* FeedListFRC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6394C6F21E7F749F004C5CDB /* FeedListFRC.swift */; };
+		6394C6F51E7F8097004C5CDB /* SourceEditFRC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6394C6F41E7F8097004C5CDB /* SourceEditFRC.swift */; };
+		6394C6F71E7F8192004C5CDB /* SourceEditService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6394C6F61E7F8192004C5CDB /* SourceEditService.swift */; };
 		63A22AE41E7E66DC00431A32 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A22AE31E7E66DC00431A32 /* Helpers.swift */; };
 		63A22AEA1E7E811B00431A32 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A22AE71E7E811B00431A32 /* FeedItem.swift */; };
 		63A22AEB1E7E811B00431A32 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A22AE81E7E811B00431A32 /* Source.swift */; };
@@ -68,6 +70,8 @@
 		638915A51E7CD3C4002DBDCF /* XMLParseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLParseService.swift; sourceTree = "<group>"; };
 		638915A71E7CD3F1002DBDCF /* AEXMLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AEXMLParser.swift; sourceTree = "<group>"; };
 		6394C6F21E7F749F004C5CDB /* FeedListFRC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedListFRC.swift; sourceTree = "<group>"; };
+		6394C6F41E7F8097004C5CDB /* SourceEditFRC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceEditFRC.swift; sourceTree = "<group>"; };
+		6394C6F61E7F8192004C5CDB /* SourceEditService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceEditService.swift; sourceTree = "<group>"; };
 		63A22AE31E7E66DC00431A32 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		63A22AE71E7E811B00431A32 /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		63A22AE81E7E811B00431A32 /* Source.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
@@ -210,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				63497ACD1E7D169D004CEC7F /* SourceEditViewController.swift */,
+				6394C6F41E7F8097004C5CDB /* SourceEditFRC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -260,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				63A22AF11E7E865B00431A32 /* SourceSaveService.swift */,
+				6394C6F61E7F8192004C5CDB /* SourceEditService.swift */,
 			);
 			path = CoreDataService;
 			sourceTree = "<group>";
@@ -713,6 +719,7 @@
 				63F8C0531E7A5F5F00EFC47C /* FeedListControllerDelegate.swift in Sources */,
 				63A22AE41E7E66DC00431A32 /* Helpers.swift in Sources */,
 				63F8C0511E7A5F3100EFC47C /* FeedListController.swift in Sources */,
+				6394C6F51E7F8097004C5CDB /* SourceEditFRC.swift in Sources */,
 				63497ABF1E7D0085004CEC7F /* FeedListCell.swift in Sources */,
 				63A22AF21E7E865B00431A32 /* SourceSaveService.swift in Sources */,
 				63F8C0491E7A597B00EFC47C /* EmptyViewDelegate.swift in Sources */,
@@ -725,6 +732,7 @@
 				63497ACE1E7D169D004CEC7F /* SourceEditViewController.swift in Sources */,
 				63F8C0451E7A4CD800EFC47C /* EmptyView.swift in Sources */,
 				63F8C0651E7ABD9A00EFC47C /* SourceRequest.swift in Sources */,
+				6394C6F71E7F8192004C5CDB /* SourceEditService.swift in Sources */,
 				6394C6F31E7F749F004C5CDB /* FeedListFRC.swift in Sources */,
 				63CBDD0F1E7A464D00D5A448 /* AppDelegate.swift in Sources */,
 				63CBDD401E7A49A100D5A448 /* BaseViewControllerProtocol.swift in Sources */,
