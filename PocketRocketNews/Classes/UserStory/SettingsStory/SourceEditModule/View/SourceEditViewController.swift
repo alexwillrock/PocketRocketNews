@@ -9,7 +9,7 @@
 import UIKit
 import MagicalRecord
 
-final class SourceEditViewController: UIViewController {
+final class SourceEditViewController: BaseViewController {
 
     //MARK: Public 
     
@@ -18,7 +18,11 @@ final class SourceEditViewController: UIViewController {
     @IBOutlet weak var edit: UIBarButtonItem!
     
     @IBAction func didTapAdd(_ sender: UIBarButtonItem) {
-        
+
+        let alert = AlertView().show(title: "Rss источник", message: "Адрес прямой ссылки", ok: "Добавить", placeholder: "http://www.aweber.com/blog/feed/", { (result) in
+            self.controller.add(link: result)
+        })
+        self.present(alert, animated: true, completion: nil)
     }
     
     @IBAction func didTapEdit(_ sender: UIBarButtonItem) {
@@ -45,6 +49,9 @@ final class SourceEditViewController: UIViewController {
         self.title = "RSS Новости"
 
         frc = SourceCD.mr_fetchAllSorted(by: "date", ascending: true, with: nil, groupBy: nil, delegate: self)
+        
+        let s = SourceCD.mr_findAll()
+        print(s)
         
         // Do any additional setup after loading the view.
     }
@@ -90,7 +97,10 @@ extension SourceEditViewController: UITableViewDataSource{
     func configure(_ cell: UITableViewCell, at indexPath: IndexPath){
         
         if let object = frc.object(at: indexPath) as? SourceCD {
-            cell.textLabel?.text = object.name
+            print(object.name)
+            print(object.link)
+            print(cell.textLabel?.text)
+            cell.textLabel?.text = object.link
         }
     }
 }
@@ -100,5 +110,9 @@ extension SourceEditViewController: UITableViewDelegate{
 }
 
 extension SourceEditViewController: SourceEditControllerDelegate{
+    
+    func showError(message: String) {
+        self.didShowError(message: message)
+    }
     
 }

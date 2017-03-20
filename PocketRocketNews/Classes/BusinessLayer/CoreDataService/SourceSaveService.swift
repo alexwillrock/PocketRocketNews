@@ -14,13 +14,21 @@ final class SourceSaveService {
     func save(_ source: Source) {
 
         MagicalRecord.save({ (context) in
-                        
-            let sourceCD = SourceCD.mr_createEntity(in: context)
-            sourceCD?.name = source.name
             
-            sourceCD?.link = source.link?.absoluteString ?? ""
-            sourceCD?.date = NSDate()
-            sourceCD?.feedItems = self.save(source.items, at: context, in: sourceCD!)
+            if let originalSource = SourceCD.mr_findFirst(byAttribute: "link", withValue: source.link?.absoluteString ?? "", in: context){
+                
+                originalSource.name = source.name
+                originalSource.date = NSDate()
+                originalSource.feedItems = self.save(source.items, at: context, in: originalSource)
+            }else{
+                
+                let sourceCD = SourceCD.mr_createEntity(in: context)
+                sourceCD?.name = source.name
+                
+                sourceCD?.link = source.link?.absoluteString ?? ""
+                sourceCD?.date = NSDate()
+                sourceCD?.feedItems = self.save(source.items, at: context, in: sourceCD!)
+            }
             
             context.mr_saveToPersistentStoreAndWait()
 
@@ -49,17 +57,33 @@ final class SourceSaveService {
         let feedsCD = NSMutableSet()
         
         for item in feeds {
-
-            if let feedCD = FeedItemCD.mr_createEntity(in: context){
+            
+            if let originalFeedCD = FeedItemCD.mr_findFirst(byAttribute: "date", withValue: item.pubDate as NSDate, in: context){
                 
-                feedCD.title = item.title
-                feedCD.text = item.text
-                feedCD.image = item.image?.absoluteString
-                feedCD.date = item.pubDate as NSDate?
-                feedCD.source = sourceCD
+                originalFeedCD.title = item.title
+                originalFeedCD.text = item.text
+                originalFeedCD.image = item.image?.absoluteString
+                originalFeedCD.date = item.pubDate as NSDate?
+                originalFeedCD.source = sourceCD
                 
-                feedsCD.add(feedCD)
+                feedsCD.add(originalFeedCD)
+                
             }
+            else{
+                
+                if let feedCD = FeedItemCD.mr_createEntity(in: context){
+                    
+                    feedCD.title = item.title
+                    feedCD.text = item.text
+                    feedCD.image = item.image?.absoluteString
+                    feedCD.date = item.pubDate as NSDate?
+                    feedCD.source = sourceCD
+                    
+                    feedsCD.add(feedCD)
+                }
+
+            }
+            
         }
 
         return feedsCD

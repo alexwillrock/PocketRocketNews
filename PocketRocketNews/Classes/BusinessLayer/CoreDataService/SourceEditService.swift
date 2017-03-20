@@ -11,8 +11,36 @@ import MagicalRecord
 
 final class SourceEditService{
     
-    func add(link: String){
-     
+    func isExist(link: String) -> Bool{
+
+        if (SourceCD.mr_findFirst(byAttribute: "link", withValue: link) != nil){
+            return true
+        }
+        return false
+    }
+    
+    func add(link: String, complete:@escaping () -> Void, failed:@escaping (Error) -> Void){
         
+        MagicalRecord.save({ (context) in
+            
+            if let sourceCD = SourceCD.mr_createEntity(in: context){
+                sourceCD.link = link
+                sourceCD.date = NSDate()
+            }
+            
+            context.mr_saveToPersistentStoreAndWait()
+            
+        }) { (success, error) in
+            
+            let s = SourceCD.mr_findAll()
+            print(s)
+            
+            if let e = error{
+                failed(e)
+                return
+            }
+            
+            complete()
+        }
     }
 }

@@ -48,8 +48,7 @@ extension BaseViewController: BaseViewControllerProtocol{
         }
         
         alert.addAction(cancell)
-        
-        self.navigationController?.pushViewController(alert, animated: true)
+        self.present(alert, animated: true, completion: nil)
     }
     
     func didShowEmptyView(){

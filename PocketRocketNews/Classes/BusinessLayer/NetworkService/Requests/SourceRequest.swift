@@ -18,7 +18,7 @@ struct SourceRequest: Request {
                     
         NetworkManager.request(at: path, with: .post, and: Parameters(), complete: { (response) in
             
-            complete(self.parser.source(object: response?.data))
+            complete(self.parser.source(link: path, object: response?.data))
             
         }) { (error) in
             

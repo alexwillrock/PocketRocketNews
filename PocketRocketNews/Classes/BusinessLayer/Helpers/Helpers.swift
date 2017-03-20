@@ -10,6 +10,17 @@ import Foundation
 
 
 extension String {
+    
+    static func validate(urlString: String) -> Bool{
+        
+        let types: NSTextCheckingResult.CheckingType = .link
+        let detector = try? NSDataDetector(types: types.rawValue)
+        if (detector?.firstMatch(in: urlString, options: .reportCompletion, range: NSMakeRange(0, urlString.characters.count))) != nil{
+            return true
+        }
+        
+        return false
+    }
 
     func firstImage() -> URL? {
 

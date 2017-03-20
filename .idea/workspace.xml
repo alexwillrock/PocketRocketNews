@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2dc7b3f-deec-4b13-8165-79ff21ac02e7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PocketRocketNews/Classes/BusinessLayer/CoreDataService/SourceSaveService.swift" afterPath="$PROJECT_DIR$/PocketRocketNews/Classes/BusinessLayer/CoreDataService/SourceSaveService.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PocketRocketNews/Classes/UserStory/FeedStory/FeedListModule/View/FeedListViewController.swift" afterPath="$PROJECT_DIR$/PocketRocketNews/Classes/UserStory/FeedStory/FeedListModule/View/FeedListViewController.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PocketRocketNews/Classes/UserStory/SettingsStory/SourceEditModule/View/SourceEditViewController.swift" afterPath="$PROJECT_DIR$/PocketRocketNews/Classes/UserStory/SettingsStory/SourceEditModule/View/SourceEditViewController.swift" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,78 +18,22 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="NetworkManager.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PocketRocketNews/Classes/BusinessLayer/NetworkService/NetworkManager/NetworkManager.swift">
+      <file leaf-file-name="SourceEditViewController.swift" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PocketRocketNews/Classes/UserStory/SettingsStory/SourceEditModule/View/SourceEditViewController.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="19" column="40" lean-forward="false" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+            <state relative-caret-position="629">
+              <caret line="41" column="8" lean-forward="false" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Helpers.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PocketRocketNews/Classes/BusinessLayer/Helpers/Helpers.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding>
-                <marker date="1489911306000" expanded="true" signature="206:1062" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="XMLParseService.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PocketRocketNews/Classes/BusinessLayer/XMLParseService/XMLParseService.swift">
+      <file leaf-file-name="SourceEditController.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PocketRocketNews/Classes/UserStory/SettingsStory/SourceEditModule/Controller/SourceEditController.swift">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AEXMLParser.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PocketRocketNews/Classes/BusinessLayer/XMLParseService/AEXMLParser.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="29" column="27" lean-forward="false" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
-              <folding>
-                <marker date="1489915152000" expanded="true" signature="213:1800" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FeedItem.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PocketRocketNews/Classes/Models/PlainObject/FeedItem.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SourceSaveService.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PocketRocketNews/Classes/BusinessLayer/CoreDataService/SourceSaveService.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="42" column="13" lean-forward="false" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FeedListViewController.swift" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/PocketRocketNews/Classes/UserStory/FeedStory/FeedListModule/View/FeedListViewController.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="57" column="4" lean-forward="false" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="4" />
-              <folding>
-                <element signature="e#151#163#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -109,6 +53,7 @@
         <option value="$PROJECT_DIR$/PocketRocketNews/Classes/BusinessLayer/XMLParseService/AEXMLParser.swift" />
         <option value="$PROJECT_DIR$/PocketRocketNews/Classes/BusinessLayer/CoreDataService/SourceSaveService.swift" />
         <option value="$PROJECT_DIR$/PocketRocketNews/Classes/UserStory/FeedStory/FeedListModule/View/FeedListViewController.swift" />
+        <option value="$PROJECT_DIR$/PocketRocketNews/Classes/UserStory/SettingsStory/SourceEditModule/View/SourceEditViewController.swift" />
       </list>
     </option>
   </component>
@@ -197,30 +142,12 @@
               <option name="myItemId" value="UserStory" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PocketRocketNews" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PocketRocketNews" />
+              <option name="myItemId" value="SettingsStory" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Classes" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UserStory" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FeedStory" />
+              <option name="myItemId" value="Storyboard" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -246,11 +173,11 @@
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="FeedStory" />
+              <option name="myItemId" value="SettingsStory" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="FeedListModule" />
+              <option name="myItemId" value="SourceEditModule" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -280,15 +207,37 @@
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="FeedStory" />
+              <option name="myItemId" value="SettingsStory" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="FeedListModule" />
+              <option name="myItemId" value="SourceEditModule" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PocketRocketNews" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PocketRocketNews" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Classes" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UserStory" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -347,6 +296,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -385,11 +340,12 @@
       <workItem from="1489809856246" duration="1123000" />
       <workItem from="1489908932976" duration="34000" />
       <workItem from="1489909219933" duration="3713000" />
+      <workItem from="1489980308147" duration="542000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6073000" />
+    <option name="totallyTimeSpent" value="6615000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -426,6 +382,66 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/PocketRocketNews/Classes/BusinessLayer/NetworkService/NetworkManager/NetworkManager.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="40" lean-forward="false" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PocketRocketNews/Classes/BusinessLayer/Helpers/Helpers.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <marker date="1489911306000" expanded="true" signature="206:1062" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PocketRocketNews/Classes/BusinessLayer/XMLParseService/XMLParseService.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PocketRocketNews/Classes/BusinessLayer/XMLParseService/AEXMLParser.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="27" lean-forward="false" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PocketRocketNews/Classes/Models/PlainObject/FeedItem.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PocketRocketNews/Classes/BusinessLayer/CoreDataService/SourceSaveService.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="13" lean-forward="false" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PocketRocketNews/Classes/UserStory/FeedStory/FeedListModule/View/FeedListViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="57" column="4" lean-forward="false" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="4" />
+          <folding>
+            <element signature="e#151#163#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/PocketRocketNews/Classes/BusinessLayer/NetworkService/NetworkManager/NetworkManager.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -488,11 +504,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PocketRocketNews/Classes/BusinessLayer/XMLParseService/AEXMLParser.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
+        <state relative-caret-position="476">
           <caret line="29" column="27" lean-forward="false" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
-          <folding>
-            <marker date="1489915152000" expanded="true" signature="213:1800" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -506,19 +520,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PocketRocketNews/Classes/BusinessLayer/CoreDataService/SourceSaveService.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="42" column="13" lean-forward="false" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="17" />
+        <state relative-caret-position="697">
+          <caret line="48" column="13" lean-forward="false" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PocketRocketNews/Classes/UserStory/FeedStory/FeedListModule/View/FeedListViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="57" column="4" lean-forward="false" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="4" />
+        <state relative-caret-position="1632">
+          <caret line="103" column="4" lean-forward="false" selection-start-line="103" selection-start-column="4" selection-end-line="103" selection-end-column="4" />
           <folding>
             <element signature="e#151#163#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PocketRocketNews/Classes/UserStory/SettingsStory/SourceEditModule/Controller/SourceEditController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PocketRocketNews/Classes/UserStory/SettingsStory/SourceEditModule/View/SourceEditViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="41" column="8" lean-forward="false" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>

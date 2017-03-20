@@ -10,24 +10,22 @@ import Foundation
 import AEXML
 
 final class AEXMLParser: XMLParseService {
-
-    func source(object: Data?) -> Source? {
-
+    
+    func source(link: String, object: Data?) -> Source? {
+        
         guard let data = object else {
             return nil
         }
-
+        
         let options = AEXMLOptions()
         do {
-
+            
             let xmlDoc = try AEXMLDocument(xml: data, options: options)
             
             guard let name = xmlDoc.root["channel"]["title"].value else {
                 print("не удалось преобразовать title")
                 return nil
             }
-
-           let link = xmlDoc.root["channel"]["atom:link"].attributes["href"] ?? ""
             
             let myItems = items(object: xmlDoc.root["channel"]["item"].all)
             
@@ -39,11 +37,11 @@ final class AEXMLParser: XMLParseService {
             return nil
         }
     }
-
+    
     private func items(object: [AEXMLElement]?) -> [FeedItem] {
-       
+        
         var feedItems = [FeedItem]()
-
+        
         guard let items = object else {
             print("фиды не найдены")
             return feedItems

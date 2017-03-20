@@ -10,7 +10,7 @@ import Foundation
 
 protocol XMLParseService {
     
-    func source(object: Data?) -> Source?
+    func source(link: String, object: Data?) -> Source?
 }
 
 struct XMLParser{

@@ -30,7 +30,7 @@ extension SourceEditViewController: NSFetchedResultsControllerDelegate {
             
         case .update:
             if let indexPath = indexPath{
-                if let cell = tableView.cellForRow(at: indexPath) as? FeedListCell{
+                if let cell = tableView.cellForRow(at: indexPath) {
                     configure(cell, at: indexPath)
                 }
             }
@@ -64,7 +64,6 @@ extension SourceEditViewController: NSFetchedResultsControllerDelegate {
             break
             
         }
-        
     }
     
     func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {

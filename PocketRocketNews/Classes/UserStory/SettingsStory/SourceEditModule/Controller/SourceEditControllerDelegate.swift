@@ -10,5 +10,6 @@ import Foundation
 
 protocol SourceEditControllerDelegate: class {
     
+    func showError(message: String)
     
 }
