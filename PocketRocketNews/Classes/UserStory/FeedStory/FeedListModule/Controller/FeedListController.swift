@@ -18,15 +18,19 @@ final class FeedListController {
     
     func getSources(){
         
-        sourceReguest.getFeedList({ (source) in
-                        
-            if let s = source{
-                self.sss.save(s)
+        let paths = ["http://www.aweber.com/blog/feed/", "http://www.internetnews.com/icom_includes/feeds/inews/xml_front-10.xml"]
+        
+        for path in paths{
+            sourceReguest.getFeedList(atPath: path, { (source) in
+                
+                if let s = source{
+                    self.sss.save(s)
+                }
+                
+            }) { (error) in
+                
             }
-            
-            
-        }) { (error) in
-            
         }
+
     }
 }

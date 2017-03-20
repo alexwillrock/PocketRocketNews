@@ -13,13 +13,9 @@ struct SourceRequest: Request {
     
     private let parser = XMLParser.fabrick()
     
-    func getFeedList(_ complete:@escaping (_ result: Source?) -> Void,
+    func getFeedList(atPath path: String,  _ complete:@escaping (_ result: Source?) -> Void,
                             failedBlock failed:@escaping (_ error: Error) -> Void){
-    
-        //let path = "http://rss.cnn.com/rss/edition.rss"
-        
-        let path = "http://www.aweber.com/blog/feed/"
-        
+                    
         NetworkManager.request(at: path, with: .post, and: Parameters(), complete: { (response) in
             
             complete(self.parser.source(object: response?.data))

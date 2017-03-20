@@ -27,14 +27,11 @@ final class AEXMLParser: XMLParseService {
                 return nil
             }
 
-            guard let link = xmlDoc.root["channel"]["atom:link"].attributes["href"] else{
-                print("не удалось преобразовать link")
-                return nil
-            }
+           let link = xmlDoc.root["channel"]["atom:link"].attributes["href"] ?? ""
             
             let myItems = items(object: xmlDoc.root["channel"]["item"].all)
             
-            return Source(name: name, link: URL(string: link), items: myItems)
+            return Source(name: name, link: URL(string: link), date: Date(), items: myItems)
             
         } catch {
             

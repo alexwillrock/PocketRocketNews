@@ -11,6 +11,10 @@ import Reusable
 
 class FeedListCell: UITableViewCell, NibReusable {
 
+    @IBOutlet weak var img: UIImageView!
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var shortDescription: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -18,4 +22,5 @@ class FeedListCell: UITableViewCell, NibReusable {
         // Initialization code
     }
     
+
 }
